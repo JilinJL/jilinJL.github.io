@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "寂林的小窝 • All posts by \"hello hexo!\" tag",
+    "description": "飒飒西风满院栽，蕊寒香冷蝶难来",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2022/11/17/demo/",
+            "url": "http://example.com/2022/11/17/demo/",
+            "title": "demo",
+            "date_published": "2022-11-17T08:00:57.000Z",
+            "content_html": "<p>hello~</p>\n",
+            "tags": [
+                "hello hexo!"
+            ]
+        }
+    ]
+}

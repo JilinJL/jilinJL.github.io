@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>寂林的小窝 • Posts by &#34;hello hexo!&#34; tag</title>
+        <link>http://example.com</link>
+        <description>飒飒西风满院栽，蕊寒香冷蝶难来</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 17 Nov 2022 16:00:57 +0800</pubDate>
+        <lastBuildDate>Thu, 17 Nov 2022 16:00:57 +0800</lastBuildDate>
+        <category>hello hexo!</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/11/17/demo/</guid>
+            <title>demo</title>
+            <link>http://example.com/2022/11/17/demo/</link>
+            <category>hello hexo!</category>
+            <pubDate>Thu, 17 Nov 2022 16:00:57 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;hello~&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
