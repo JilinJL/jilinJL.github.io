@@ -1,0 +1,467 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="寂林的小窝" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="寂林的小窝" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="寂林的小窝" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="jilin,1004" />
+
+
+<link rel="canonical" href="http://example.com/2022/11/18/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+
+
+
+  <title>
+JS设计模式 |
+Welcome = 寂林的小窝 = JiLin's Cave</title>
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">JS设计模式
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-11-18 00:20:03">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-11-18T00:20:03+08:00">2022-11-18</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>4k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Welcome</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202211172224371.jpg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/18/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="寂林">
+    <meta itemprop="description" content="JiLin's Cave, 飒飒西风满院栽，蕊寒香冷蝶难来">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="寂林的小窝">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="javascript中的设计模式"><a class="markdownIt-Anchor" href="#javascript中的设计模式">#</a> JavaScript 中的设计模式</h1>
+<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
+<p>​		设计模式，往往是软件设计中的最佳实践，是前人对问题的解决经验的总结。我认为学习并理解设计模式，对自己的程序设计，软件开发有很大帮助，同时也可以扩展自己开发设计的思维。我是后来才明白，所有编程语言，都有设计模式这一说法，读《JavaScript 中的设计模式》这本书，给了我很大启发。</p>
+<h3 id="关于es6的继承"><a class="markdownIt-Anchor" href="#关于es6的继承">#</a> 关于 ES6 的继承：</h3>
+<blockquote>
+<p>​		子类必须在 <code>constructor</code>  方法中调用 <code>super</code>  方法，否则新建实例时会报错。这是因为子类没有自己的 <code>this</code>  对象，而是继承父类的 <code>this</code>  对象，然后对其进行加工。如果不调用 <code>super</code>  方法，子类就得不到 <code>this</code>  对象。</p>
+</blockquote>
+<blockquote>
+<p>ES5 的继承，实质是先创造子类的实例对象 <code>this</code> ，然后再将父类的方法添加到 <code>this</code>  上面（ <code>Parent.apply(this)</code> ）。</p>
+<p>ES6 的继承机制完全不同，实质是先创造父类的实例对象 <code>this</code> （所以必须先调用 <code>super</code>  方法），然后再用子类的构造函数修改 <code>this</code> 。</p>
+<p>如果子类没有定义 <code>constructor</code>  方法，这个方法会被默认添加，代码如下。也就是说，不管有没有显式定义，任何一个子类都有 <code>constructor</code>  方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ColorPoint</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Point</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ColorPoint</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">...args</span>) &#123;</span><br><span class="line">    <span class="variable language_">super</span>(...args);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="设计模式的六大原则"><a class="markdownIt-Anchor" href="#设计模式的六大原则">#</a> 设计模式的六大原则</h2>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC82OTY3Mjc5ODQ5NTk3NTY2OTg0">单一职责原则（Single Responsibility Principle）</span>；</li>
+</ul>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC50ZW5jZW50LmNvbS9kZXZlbG9wZXIvYXJ0aWNsZS8xODM2NzUz">开闭原则（Open Closed Principle）</span>；</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNjg1NzQ2NDE=">里氏替换原则（Liskov Substitution Principle)</span>；</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vSVRQb3dlci9wLzE0ODczMDcyLmh0bWw=">迪米特法则（Law of Demeter），又叫 “最少知道法则”</span>；</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU5NDA0MS9hcnRpY2xlL2RldGFpbHMvMTEyNzI3MjI0">接口隔离原则（Interface Segregation Principle）</span>；</li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC9jM2NlNjc2MjI1N2M=">依赖倒置原则（Dependence Inversion Principle）</span>。</li>
+</ul>
+<img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202211172227388.png" alt="image-20221115144952471" style="zoom: 80%;" />
+<hr>
+<h2 id="创造型设计模式5"><a class="markdownIt-Anchor" href="#创造型设计模式5">#</a> 创造型设计模式（5）</h2>
+<h3 id="1工厂模式"><a class="markdownIt-Anchor" href="#1工厂模式">#</a> 1. 工厂模式</h3>
+<p>​		工厂模式是比较常用的设计模式之一，那么什么叫模式呢？简单来说，就是你需要什么东西，不直接使用 new 的方法生成实例，而是通过工厂加工再生成实例。</p>
+<p>​		比如我们现在需要生产三种形状，分别为：圆形，正方形，三角形。我们可以这样做：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span> &#123;</span><br><span class="line">  draw = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;画了一个圆形&quot;</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Triangle</span> &#123;</span><br><span class="line">  draw = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;画了一个三角形&quot;</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Square</span> &#123;</span><br><span class="line">  draw = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;画了一个正方形&quot;</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> myCircle = <span class="keyword">new</span> <span class="title class_">Circle</span>();</span><br><span class="line">myCircle.<span class="title function_">draw</span>(); <span class="comment">//画了一个圆形</span></span><br></pre></td></tr></table></figure>
+<p>​		但是这样的话，每次我需要一个圆形，都要自己 new 一个 Circle，如果需要其他形状，又要 new 一个其他的构造类，下面我们来建一个工厂，负责生产不同的形状。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">shapeFactory</span> &#123;</span><br><span class="line">  <span class="title function_">getShape</span>(<span class="params">shapeType</span>) &#123;</span><br><span class="line">    <span class="keyword">switch</span> (shapeType) &#123;</span><br><span class="line">      <span class="keyword">case</span> <span class="string">&quot;Circle&quot;</span>: &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Circle</span>();	<span class="comment">//生产new圆</span></span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">case</span> <span class="string">&quot;Triangle&quot;</span>: &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Triangle</span>();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">case</span> <span class="string">&quot;Square&quot;</span>: &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Square</span>();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> shapefactory = <span class="keyword">new</span> <span class="title function_">shapeFactory</span>();</span><br><span class="line"><span class="keyword">const</span> myCircle = shapefactory.<span class="title function_">getShape</span>(<span class="string">&quot;Circle&quot;</span>);	</span><br><span class="line"><span class="keyword">const</span> myTriangle = shapefactory.<span class="title function_">getShape</span>(<span class="string">&quot;Triangle&quot;</span>);</span><br><span class="line">myCircle.<span class="title function_">draw</span>()		<span class="comment">//画了一个圆形</span></span><br><span class="line">myTriangle.<span class="title function_">draw</span>()	<span class="comment">//画了一个三角形</span></span><br></pre></td></tr></table></figure>
+<p><strong>工厂模式的优势</strong>：使用工厂模式的好处也是显而易见的，比如实例的生产比较复杂，或者说生成实例后还需要额外加工，这个时候工厂给了我们一个统一的出入口，也方便了日后对这个实例的修改。比如你要修改产出是一个单例的时候，就不需要在所有类中修改，而只需要在工厂出口修改即可。</p>
+<h3 id="2抽象工厂模式"><a class="markdownIt-Anchor" href="#2抽象工厂模式">#</a> 2. 抽象工厂模式</h3>
+<p>​		抽象工厂？这名字确实挺抽象，因为一般来讲一个工厂只负责加工一个组件，而你的产品需要很多组件合成组装，因此你需要很多生产不同组件的工厂，那么如何管理这些工厂呢，那就用生产工厂的工厂！</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">//形状有哪些</span></span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">Circle</span> &#123;</span><br><span class="line">    draw = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;画了一个圆形&quot;</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">Triangle</span> &#123;</span><br><span class="line">    draw = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;画了一个三角形&quot;</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">Square</span> &#123;</span><br><span class="line">    draw = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;画了一个正方形&quot;</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//颜色有哪些</span></span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">Blue</span> &#123;</span><br><span class="line">    fill = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;填充蓝色&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">Red</span> &#123;</span><br><span class="line">    fill = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;填充红色&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">Yellow</span> &#123;</span><br><span class="line">    fill = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;填充黄色&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//先拿到上文的形状工厂</span></span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">ShapeFactory</span> &#123;</span><br><span class="line">    <span class="title function_">getShape</span>(<span class="params">shapeType</span>) &#123;</span><br><span class="line">      <span class="keyword">switch</span> (shapeType) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;Circle&quot;</span>: &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Circle</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;Triangle&quot;</span>: &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Triangle</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;Square&quot;</span>: &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Square</span>();</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">//再创建一个颜色工厂负责上色</span></span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">ColorFactory</span> &#123;</span><br><span class="line">    <span class="title function_">getColor</span>(<span class="params">colorType</span>) &#123;</span><br><span class="line">        <span class="keyword">switch</span> (colorType) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;Blue&#x27;</span>:&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Blue</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;Green&#x27;</span>:&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Green</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;Yellow&#x27;</span>:&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Yellow</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//抽象工厂，负责管理下面所有工厂</span></span><br><span class="line">  <span class="keyword">class</span> <span class="title class_">FatherFactory</span> &#123;</span><br><span class="line">    <span class="title function_">getFactory</span>(<span class="params">choice</span>) &#123;</span><br><span class="line">        <span class="keyword">switch</span> (choice) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;Color&#x27;</span>:&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ColorFactory</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;Shape&#x27;</span>:&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ShapeFactory</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//现在开始生产</span></span><br><span class="line">  <span class="keyword">const</span> fatherfactory = <span class="keyword">new</span> <span class="title class_">FatherFactory</span>()</span><br><span class="line">  <span class="keyword">const</span> colorfactory = fatherfactory.<span class="title function_">getFactory</span>(<span class="string">&#x27;Color&#x27;</span>)    <span class="comment">//生产颜色工厂</span></span><br><span class="line">  <span class="keyword">const</span> shapefactory = fatherfactory.<span class="title function_">getFactory</span>(<span class="string">&#x27;Shape&#x27;</span>)    <span class="comment">//生产形状工厂</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> myCircle = shapefactory.<span class="title function_">getShape</span>(<span class="string">&#x27;Circle&#x27;</span>)</span><br><span class="line">  myCircle.<span class="title function_">draw</span>()  <span class="comment">// &quot;画了一个圆形&quot;</span></span><br><span class="line">  <span class="keyword">const</span> blue = colorfactory.<span class="title function_">getColor</span>(<span class="string">&#x27;Blue&#x27;</span>)</span><br><span class="line">  blue.<span class="title function_">fill</span>();     <span class="comment">// &quot;填充蓝色&quot;</span></span><br></pre></td></tr></table></figure>
+<p><strong>说说好处</strong>：和工厂模式类似，抽象工厂模式方便了对各种工厂的管理。</p>
+<h3 id="3单例模式"><a class="markdownIt-Anchor" href="#3单例模式">#</a> 3. 单例模式</h3>
+<p>​		顾名思义，单例模式就是每个实例只生产一次。单例模式又分为两种，一种叫<strong>懒汉式</strong>，一种叫<strong>饿汉式</strong>。区别在于，懒汉式是使用的时候才初始化，饿汉式是先初始化，需要用的时候直接给。<br>
+​		值得注意的是懒汉式写法在 java 中可能会对线程安全有影响，但是 JS 是单线程的，不需要考虑线程安全哈哈哈，所以优先考虑懒汉式。</p>
+<p>TODO…</p>
+<h2 id="结构型设计模式8"><a class="markdownIt-Anchor" href="#结构型设计模式8">#</a> 结构型设计模式（8）</h2>
+<h2 id="行为型设计模式12"><a class="markdownIt-Anchor" href="#行为型设计模式12">#</a> 行为型设计模式（12）</h2>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-11-18 00:20:42" itemprop="dateModified" datetime="2022-11-18T00:20:42+08:00">2022-11-18</time>
+  </span>
+  <span id="2022/11/18/js/design-patterns/JS设计模式/" class="item leancloud_visitors" data-flag-title="JS设计模式" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="寂林 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="寂林 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>寂林 <i class="ic i-at"><em>@</em></i>寂林的小窝
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2022/11/18/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="JS设计模式">http://example.com/2022/11/18/js/design-patterns/JS设计模式/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/11/17/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;gitee.com&#x2F;jilinJL&#x2F;my-pictures&#x2F;raw&#x2F;master&#x2F;img&#x2F;202211172224371.jpg" title="ES6">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>ES6</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#javascript%E4%B8%AD%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text"> JavaScript 中的设计模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text"> 前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ees6%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 关于 ES6 的继承：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text"> 设计模式的六大原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E9%80%A0%E5%9E%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F5"><span class="toc-number">1.3.</span> <span class="toc-text"> 创造型设计模式（5）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 1. 工厂模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 2. 抽象工厂模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 3. 单例模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%9E%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F8"><span class="toc-number">1.4.</span> <span class="toc-text"> 结构型设计模式（8）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E4%B8%BA%E5%9E%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F12"><span class="toc-number">1.5.</span> <span class="toc-text"> 行为型设计模式（12）</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="寂林"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">寂林</p>
+  <div class="description" itemprop="description">飒飒西风满院栽，蕊寒香冷蝶难来</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">3</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">1</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbGluSkw=" title="https:&#x2F;&#x2F;github.com&#x2F;jilinJL"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/11/17/demo/" title="demo">demo</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/11/17/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/" title="ES6">ES6</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/11/18/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="JS设计模式">JS设计模式</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">寂林 @ Welcome</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">15k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">13 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/11/18/js/design-patterns/JS设计模式/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
