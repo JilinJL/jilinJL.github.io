@@ -1,20 +1,25 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>寂林的小窝 • Posts by &#34;js,es6&#34; tag</title>
-    <link href="http://example.com" />
-    <updated>2022-11-18T01:03:14.663Z</updated>
-    <category term="hello hexo!" />
-    <category term="js" />
-    <category term="es6" />
-    <category term="html" />
-    <category term="css" />
-    <category term="JS,es6" />
-    <entry>
-        <id>http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</id>
-        <title>JS基础啦</title>
-        <link rel="alternate" href="http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/"/>
-        <content type="html">&lt;h1 id=&#34;js基础和核心问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js基础和核心问题&#34;&gt;#&lt;/a&gt; JS 基础和核心问题&lt;/h1&gt;
+<rss version="2.0">
+    <channel>
+        <title>寂林的小窝 • Posts by &#34;js基础&#34; category</title>
+        <link>http://example.com</link>
+        <description>飒飒西风满院栽，蕊寒香冷蝶难来</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
+        <lastBuildDate>Fri, 18 Nov 2022 09:03:14 +0800</lastBuildDate>
+        <category>hello hexo!</category>
+        <category>js</category>
+        <category>es6</category>
+        <category>html</category>
+        <category>css</category>
+        <category>JS,es6</category>
+        <item>
+            <guid isPermalink="true">http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</guid>
+            <title>JS基础啦</title>
+            <link>http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</link>
+            <category>JS,es6</category>
+            <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;js基础和核心问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js基础和核心问题&#34;&gt;#&lt;/a&gt; JS 基础和核心问题&lt;/h1&gt;
 &lt;h3 id=&#34;判断数据类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#判断数据类型&#34;&gt;#&lt;/a&gt; 判断数据类型&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;typeof 用于判断基本数据类型，引用数据类型和 null 都判为 object&lt;/li&gt;
@@ -73,8 +78,7 @@
 &lt;p&gt;​		node 环境下 js 事件循环机制与 浏览器环境下有出入，不过随着 node 版本的更新，正在不断规范。&lt;/p&gt;
 &lt;p&gt;nod 执行栈 -&amp;gt; 宏任务 -&amp;gt; 宏任务 -&amp;gt; 微任务 -&amp;gt; 微任务&lt;/p&gt;
 &lt;p&gt;浏览器环境：执行栈 -&amp;gt; 宏任务 -&amp;gt; 微任务 -&amp;gt; 宏任务 -&amp;gt; 微任务&lt;/p&gt;
-</content>
-        <category term="JS,es6" />
-        <updated>2022-11-18T01:03:14.663Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>
