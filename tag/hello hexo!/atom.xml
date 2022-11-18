@@ -5,6 +5,8 @@
     <link href="http://example.com" />
     <updated>2022-11-17T08:00:57.000Z</updated>
     <category term="hello hexo!" />
+    <category term="js" />
+    <category term="es6" />
     <entry>
         <id>http://example.com/2022/11/17/demo/</id>
         <title>demo</title>
