@@ -5,10 +5,10 @@
     <link href="http://example.com" />
     <updated>2022-11-17T16:20:03.492Z</updated>
     <category term="hello hexo!" />
-    <category term="js" />
-    <category term="es6" />
     <category term="html" />
     <category term="css" />
+    <category term="js" />
+    <category term="es6" />
     <category term="JS,es6" />
     <entry>
         <id>http://example.com/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
