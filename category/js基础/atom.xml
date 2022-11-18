@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://jilinJL.github.io/project</id>
     <title>寂林的小窝 • Posts by &#34;js基础&#34; category</title>
-    <link href="http://example.com" />
+    <link href="https://jilinJL.github.io/project" />
     <updated>2022-11-18T01:03:14.663Z</updated>
     <category term="hello hexo!" />
     <category term="html" />
     <category term="css" />
+    <category term="JS,es6" />
     <category term="js" />
     <category term="es6" />
-    <category term="JS,es6" />
     <entry>
-        <id>http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</id>
+        <id>https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</id>
         <title>JS基础啦</title>
-        <link rel="alternate" href="http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/"/>
         <content type="html">&lt;h1 id=&#34;js基础和核心问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js基础和核心问题&#34;&gt;#&lt;/a&gt; JS 基础和核心问题&lt;/h1&gt;
 &lt;h3 id=&#34;判断数据类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#判断数据类型&#34;&gt;#&lt;/a&gt; 判断数据类型&lt;/h3&gt;
 &lt;ol&gt;

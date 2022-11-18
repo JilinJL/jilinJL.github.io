@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://jilinJL.github.io/project</id>
     <title>寂林的小窝</title>
-    <link href="http://example.com" />
+    <link href="https://jilinJL.github.io/project" />
     <updated>2022-11-18T01:03:14.663Z</updated>
     <category term="hello hexo!" />
     <category term="html" />
     <category term="css" />
+    <category term="JS,es6" />
     <category term="js" />
     <category term="es6" />
-    <category term="JS,es6" />
     <entry>
-        <id>http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</id>
+        <id>https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</id>
         <title>JS基础啦</title>
-        <link rel="alternate" href="http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/"/>
         <content type="html">&lt;h1 id=&#34;js基础和核心问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js基础和核心问题&#34;&gt;#&lt;/a&gt; JS 基础和核心问题&lt;/h1&gt;
 &lt;h3 id=&#34;判断数据类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#判断数据类型&#34;&gt;#&lt;/a&gt; 判断数据类型&lt;/h3&gt;
 &lt;ol&gt;
@@ -78,9 +78,9 @@
         <updated>2022-11-18T01:03:14.663Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</id>
+        <id>https://jilinjl.github.io/project/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</id>
         <title>CSS的布局知识</title>
-        <link rel="alternate" href="http://example.com/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/project/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/"/>
         <content type="html">&lt;h1 id=&#34;css布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css布局&#34;&gt;#&lt;/a&gt; &lt;strong&gt;CSS 布局&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202211180906847.png&#34; alt=&#34;页面布局&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1流式布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1流式布局&#34;&gt;#&lt;/a&gt; 1. 流式布局&lt;/h2&gt;
@@ -243,9 +243,9 @@
         <updated>2022-11-18T01:03:02.863Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</id>
+        <id>https://jilinjl.github.io/project/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</id>
         <title>HTML-梦开始的地方</title>
-        <link rel="alternate" href="http://example.com/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/project/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/"/>
         <content type="html">&lt;h3 id=&#34;1关于表单验证&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1关于表单验证&#34;&gt;#&lt;/a&gt; 1. 关于表单验证&lt;/h3&gt;
 &lt;p&gt;1、required 设置表单必填&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202211180909420.png&#34; alt=&#34;image-20221110102046922&#34;&gt;&lt;/p&gt;
@@ -488,9 +488,9 @@
         <updated>2022-11-18T01:03:02.856Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
+        <id>https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
         <title>JS设计模式</title>
-        <link rel="alternate" href="http://example.com/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
         <content type="html">&lt;h1 id=&#34;javascript中的设计模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript中的设计模式&#34;&gt;#&lt;/a&gt; JavaScript 中的设计模式&lt;/h1&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
 &lt;p&gt;​		设计模式，往往是软件设计中的最佳实践，是前人对问题的解决经验的总结。我认为学习并理解设计模式，对自己的程序设计，软件开发有很大帮助，同时也可以扩展自己开发设计的思维。我是后来才明白，所有编程语言，都有设计模式这一说法，读《JavaScript 中的设计模式》这本书，给了我很大启发。&lt;/p&gt;
@@ -540,9 +540,9 @@
         <updated>2022-11-17T16:20:03.492Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</id>
+        <id>https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</id>
         <title>ES6</title>
-        <link rel="alternate" href="http://example.com/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/"/>
         <content type="html">&lt;h1 id=&#34;ecma-script-6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ecma-script-6&#34;&gt;#&lt;/a&gt; ECMA script 6&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;其实是 ES6➕之后的版本统称 ES6&lt;/p&gt;
@@ -721,9 +721,9 @@
         <updated>2022-11-17T14:56:14.192Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/demo/</id>
+        <id>https://jilinjl.github.io/project/demo/</id>
         <title>demo</title>
-        <link rel="alternate" href="http://example.com/demo/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/project/demo/"/>
         <content type="html">&lt;p&gt;hello~&lt;/p&gt;
 </content>
         <category term="hello hexo!" />

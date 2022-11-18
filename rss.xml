@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>寂林的小窝</title>
-        <link>http://example.com</link>
+        <link>https://jilinJL.github.io/project</link>
         <description>飒飒西风满院栽，蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
         <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
@@ -10,13 +10,13 @@
         <category>hello hexo!</category>
         <category>html</category>
         <category>css</category>
+        <category>JS,es6</category>
         <category>js</category>
         <category>es6</category>
-        <category>JS,es6</category>
         <item>
-            <guid isPermalink="true">http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</guid>
             <title>JS基础啦</title>
-            <link>http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</link>
+            <link>https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</link>
             <category>JS,es6</category>
             <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;js基础和核心问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js基础和核心问题&#34;&gt;#&lt;/a&gt; JS 基础和核心问题&lt;/h1&gt;
@@ -81,9 +81,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/project/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</guid>
             <title>CSS的布局知识</title>
-            <link>http://example.com/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</link>
+            <link>https://jilinjl.github.io/project/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</link>
             <category>css</category>
             <pubDate>Fri, 18 Nov 2022 09:03:02 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;css布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css布局&#34;&gt;#&lt;/a&gt; &lt;strong&gt;CSS 布局&lt;/strong&gt;&lt;/h1&gt;
@@ -246,9 +246,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/project/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</guid>
             <title>HTML-梦开始的地方</title>
-            <link>http://example.com/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</link>
+            <link>https://jilinjl.github.io/project/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</link>
             <category>html</category>
             <pubDate>Fri, 18 Nov 2022 09:03:02 +0800</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;1关于表单验证&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1关于表单验证&#34;&gt;#&lt;/a&gt; 1. 关于表单验证&lt;/h3&gt;
@@ -491,9 +491,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
             <title>JS设计模式</title>
-            <link>http://example.com/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+            <link>https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
             <category>js</category>
             <pubDate>Fri, 18 Nov 2022 00:20:03 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;javascript中的设计模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript中的设计模式&#34;&gt;#&lt;/a&gt; JavaScript 中的设计模式&lt;/h1&gt;
@@ -543,9 +543,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</guid>
             <title>ES6</title>
-            <link>http://example.com/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</link>
+            <link>https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</link>
             <category>es6</category>
             <pubDate>Thu, 17 Nov 2022 22:56:14 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;ecma-script-6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ecma-script-6&#34;&gt;#&lt;/a&gt; ECMA script 6&lt;/h1&gt;
@@ -724,9 +724,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/demo/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/project/demo/</guid>
             <title>demo</title>
-            <link>http://example.com/demo/</link>
+            <link>https://jilinjl.github.io/project/demo/</link>
             <category>hello hexo!</category>
             <pubDate>Thu, 17 Nov 2022 16:00:57 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;hello~&lt;/p&gt;

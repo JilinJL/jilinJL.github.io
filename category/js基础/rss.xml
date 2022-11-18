@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>寂林的小窝 • Posts by &#34;js基础&#34; category</title>
-        <link>http://example.com</link>
+        <link>https://jilinJL.github.io/project</link>
         <description>飒飒西风满院栽，蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
         <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
@@ -10,13 +10,13 @@
         <category>hello hexo!</category>
         <category>html</category>
         <category>css</category>
+        <category>JS,es6</category>
         <category>js</category>
         <category>es6</category>
-        <category>JS,es6</category>
         <item>
-            <guid isPermalink="true">http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</guid>
             <title>JS基础啦</title>
-            <link>http://example.com/js/js-basic/JS%E5%9F%BA%E7%A1%80/</link>
+            <link>https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</link>
             <category>JS,es6</category>
             <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;js基础和核心问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js基础和核心问题&#34;&gt;#&lt;/a&gt; JS 基础和核心问题&lt;/h1&gt;
