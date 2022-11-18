@@ -93,12 +93,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
         </ul>
       </div>
     </header>
@@ -274,6 +274,18 @@
 <div class="breadcrumb">
 <a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
 <i class="ic i-angle-right"></i>
+<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
+</div>
+
+    <span><a href="/js/js-basic/JS%E5%9F%BA%E7%A1%80/" title="JS基础啦">JS基础啦</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
 <a href="/categories/js/es6/" title="分类于 浅试一下ES6+">浅试一下ES6+</a>
 </div>
 
@@ -306,31 +318,19 @@
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/demo/" title="demo">demo</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
-</div>
-
-    <span><a href="/js/js-basic/JS%E5%9F%BA%E7%A1%80/" title="JS基础啦">JS基础啦</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
 </div>
 
     <span><a href="/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/" title="HTML-梦开始的地方">HTML-梦开始的地方</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/demo/" title="demo">demo</a></span>
   </li>
 
   </ul>
@@ -366,11 +366,17 @@
     <span title="站点阅读时长">23 分钟</span>
   </div>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-<span class="post-meta-divider">|</span>
-<span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"</span>人</span>
-</div>
+<% if (theme.busuanzi && theme.busuanzi.enable){ %>
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <% } %>
+
 
       </div>
     </footer>
