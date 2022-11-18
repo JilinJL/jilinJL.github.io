@@ -5,11 +5,12 @@
     <link href="https://jilinJL.github.io" />
     <updated>2022-11-17T14:56:14.192Z</updated>
     <category term="hello hexo!" />
-    <category term="css" />
     <category term="html" />
-    <category term="js" />
-    <category term="JS,es6" />
+    <category term="life" />
+    <category term="css" />
     <category term="es6" />
+    <category term="js" />
+    <category term="JS" />
     <entry>
         <id>https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</id>
         <title>ES6</title>
@@ -189,6 +190,7 @@
 &lt;p&gt;await 获取 async 异步的结果&lt;/p&gt;
 </content>
         <category term="es6" />
+        <category term="js" />
         <updated>2022-11-17T14:56:14.192Z</updated>
     </entry>
 </feed>

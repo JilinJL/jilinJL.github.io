@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "寂林的小窝 • All posts by \"something\" category",
+    "description": "飒飒西风满院栽,蕊寒香冷蝶难来",
+    "home_page_url": "https://jilinJL.github.io",
+    "items": [
+        {
+            "id": "https://jilinjl.github.io/something/i/",
+            "url": "https://jilinjl.github.io/something/i/",
+            "title": "I",
+            "date_published": "2022-11-18T13:59:07.890Z",
+            "content_html": "<blockquote>\n<p>​\t\t我们这一生，好像都在奋力追逐着某样东西，它有时候近在咫尺，有时候渺茫无期。<br>\n​\t\t我生来这个世界，是为了什么。我与同辈高谈阔论，看晚辈风华正茂，对长辈恭敬如宾。我的意识在控制着我，还是我在改变我的意识。自以为懂得很多，视他人如蜉蝣，可是我的尽头呢…… 如一望无垠，好像是充满机遇，可又有十足的踏空感。仿佛跌落云端，看尽朝夕晚霞，终究坠入深渊。<br>\n​\t\t这是我能决定的吗？生老病死，自古如此，万物如此。我担当多少角色，做过多少善事恶事，，我，在想什么</p>\n</blockquote>\n",
+            "tags": [
+                "life"
+            ]
+        }
+    ]
+}

@@ -8,16 +8,18 @@
         <pubDate>Thu, 17 Nov 2022 22:56:14 +0800</pubDate>
         <lastBuildDate>Thu, 17 Nov 2022 22:56:14 +0800</lastBuildDate>
         <category>hello hexo!</category>
-        <category>css</category>
         <category>html</category>
-        <category>js</category>
-        <category>JS,es6</category>
+        <category>life</category>
+        <category>css</category>
         <category>es6</category>
+        <category>js</category>
+        <category>JS</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</guid>
             <title>ES6</title>
             <link>https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</link>
             <category>es6</category>
+            <category>js</category>
             <pubDate>Thu, 17 Nov 2022 22:56:14 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;ecma-script-6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ecma-script-6&#34;&gt;#&lt;/a&gt; ECMA script 6&lt;/h1&gt;
 &lt;hr&gt;
