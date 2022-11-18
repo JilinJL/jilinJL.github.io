@@ -3,16 +3,16 @@
     <channel>
         <title>寂林的小窝 • Posts by &#34;hello hexo!&#34; tag</title>
         <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院栽，蕊寒香冷蝶难来</description>
+        <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
         <pubDate>Thu, 17 Nov 2022 16:00:57 +0800</pubDate>
         <lastBuildDate>Thu, 17 Nov 2022 16:00:57 +0800</lastBuildDate>
         <category>hello hexo!</category>
         <category>html</category>
+        <category>es6</category>
         <category>css</category>
         <category>js</category>
         <category>JS,es6</category>
-        <category>es6</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/demo/</guid>
             <title>demo</title>
