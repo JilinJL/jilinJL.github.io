@@ -2,21 +2,21 @@
 <rss version="2.0">
     <channel>
         <title>寂林的小窝 • Posts by &#34;javascript&#34; category</title>
-        <link>https://jilinJL.github.io/project</link>
+        <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽，蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
         <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
         <lastBuildDate>Fri, 18 Nov 2022 09:03:14 +0800</lastBuildDate>
-        <category>hello hexo!</category>
         <category>html</category>
+        <category>hello hexo!</category>
         <category>css</category>
         <category>JS,es6</category>
-        <category>js</category>
         <category>es6</category>
+        <category>js</category>
         <item>
-            <guid isPermalink="true">https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/js/js-basic/JS%E5%9F%BA%E7%A1%80/</guid>
             <title>JS基础啦</title>
-            <link>https://jilinjl.github.io/project/js/js-basic/JS%E5%9F%BA%E7%A1%80/</link>
+            <link>https://jilinjl.github.io/js/js-basic/JS%E5%9F%BA%E7%A1%80/</link>
             <category>JS,es6</category>
             <pubDate>Fri, 18 Nov 2022 09:03:14 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;js基础和核心问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js基础和核心问题&#34;&gt;#&lt;/a&gt; JS 基础和核心问题&lt;/h1&gt;
@@ -81,9 +81,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
             <title>JS设计模式</title>
-            <link>https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+            <link>https://jilinjl.github.io/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
             <category>js</category>
             <pubDate>Fri, 18 Nov 2022 00:20:03 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;javascript中的设计模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript中的设计模式&#34;&gt;#&lt;/a&gt; JavaScript 中的设计模式&lt;/h1&gt;
@@ -133,9 +133,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</guid>
             <title>ES6</title>
-            <link>https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</link>
+            <link>https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</link>
             <category>es6</category>
             <pubDate>Thu, 17 Nov 2022 22:56:14 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;ecma-script-6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ecma-script-6&#34;&gt;#&lt;/a&gt; ECMA script 6&lt;/h1&gt;

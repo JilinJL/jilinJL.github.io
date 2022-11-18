@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jilinJL.github.io/project</id>
+    <id>https://jilinJL.github.io</id>
     <title>寂林的小窝 • Posts by &#34;css&#34; tag</title>
-    <link href="https://jilinJL.github.io/project" />
+    <link href="https://jilinJL.github.io" />
     <updated>2022-11-18T01:03:02.863Z</updated>
-    <category term="hello hexo!" />
     <category term="html" />
+    <category term="hello hexo!" />
     <category term="css" />
     <category term="JS,es6" />
-    <category term="js" />
     <category term="es6" />
+    <category term="js" />
     <entry>
-        <id>https://jilinjl.github.io/project/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</id>
+        <id>https://jilinjl.github.io/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</id>
         <title>CSS的布局知识</title>
-        <link rel="alternate" href="https://jilinjl.github.io/project/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/"/>
         <content type="html">&lt;h1 id=&#34;css布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css布局&#34;&gt;#&lt;/a&gt; &lt;strong&gt;CSS 布局&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202211180906847.png&#34; alt=&#34;页面布局&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1流式布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1流式布局&#34;&gt;#&lt;/a&gt; 1. 流式布局&lt;/h2&gt;

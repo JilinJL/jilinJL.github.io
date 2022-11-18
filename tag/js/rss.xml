@@ -2,21 +2,21 @@
 <rss version="2.0">
     <channel>
         <title>寂林的小窝 • Posts by &#34;js&#34; tag</title>
-        <link>https://jilinJL.github.io/project</link>
+        <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽，蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
         <pubDate>Fri, 18 Nov 2022 00:20:03 +0800</pubDate>
         <lastBuildDate>Fri, 18 Nov 2022 00:20:03 +0800</lastBuildDate>
-        <category>hello hexo!</category>
         <category>html</category>
+        <category>hello hexo!</category>
         <category>css</category>
         <category>JS,es6</category>
-        <category>js</category>
         <category>es6</category>
+        <category>js</category>
         <item>
-            <guid isPermalink="true">https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+            <guid isPermalink="true">https://jilinjl.github.io/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
             <title>JS设计模式</title>
-            <link>https://jilinjl.github.io/project/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+            <link>https://jilinjl.github.io/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
             <category>js</category>
             <pubDate>Fri, 18 Nov 2022 00:20:03 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;javascript中的设计模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript中的设计模式&#34;&gt;#&lt;/a&gt; JavaScript 中的设计模式&lt;/h1&gt;

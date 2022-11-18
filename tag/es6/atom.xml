@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jilinJL.github.io/project</id>
+    <id>https://jilinJL.github.io</id>
     <title>寂林的小窝 • Posts by &#34;es6&#34; tag</title>
-    <link href="https://jilinJL.github.io/project" />
+    <link href="https://jilinJL.github.io" />
     <updated>2022-11-17T14:56:14.192Z</updated>
-    <category term="hello hexo!" />
     <category term="html" />
+    <category term="hello hexo!" />
     <category term="css" />
     <category term="JS,es6" />
-    <category term="js" />
     <category term="es6" />
+    <category term="js" />
     <entry>
-        <id>https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</id>
+        <id>https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</id>
         <title>ES6</title>
-        <link rel="alternate" href="https://jilinjl.github.io/project/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/"/>
         <content type="html">&lt;h1 id=&#34;ecma-script-6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ecma-script-6&#34;&gt;#&lt;/a&gt; ECMA script 6&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;其实是 ES6➕之后的版本统称 ES6&lt;/p&gt;

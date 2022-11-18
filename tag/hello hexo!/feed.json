@@ -2,11 +2,11 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "寂林的小窝 • All posts by \"hello hexo!\" tag",
     "description": "飒飒西风满院栽，蕊寒香冷蝶难来",
-    "home_page_url": "https://jilinJL.github.io/project",
+    "home_page_url": "https://jilinJL.github.io",
     "items": [
         {
-            "id": "https://jilinjl.github.io/project/demo/",
-            "url": "https://jilinjl.github.io/project/demo/",
+            "id": "https://jilinjl.github.io/demo/",
+            "url": "https://jilinjl.github.io/demo/",
             "title": "demo",
             "date_published": "2022-11-17T08:00:57.000Z",
             "content_html": "<p>hello~</p>\n",
