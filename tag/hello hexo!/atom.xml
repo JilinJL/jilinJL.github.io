@@ -7,10 +7,13 @@
     <category term="hello hexo!" />
     <category term="js" />
     <category term="es6" />
+    <category term="html" />
+    <category term="css" />
+    <category term="JS,es6" />
     <entry>
-        <id>http://example.com/2022/11/17/demo/</id>
+        <id>http://example.com/demo/</id>
         <title>demo</title>
-        <link rel="alternate" href="http://example.com/2022/11/17/demo/"/>
+        <link rel="alternate" href="http://example.com/demo/"/>
         <content type="html">&lt;p&gt;hello~&lt;/p&gt;
 </content>
         <category term="hello hexo!" />

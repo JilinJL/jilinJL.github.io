@@ -7,10 +7,13 @@
     <category term="hello hexo!" />
     <category term="js" />
     <category term="es6" />
+    <category term="html" />
+    <category term="css" />
+    <category term="JS,es6" />
     <entry>
-        <id>http://example.com/2022/11/18/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
+        <id>http://example.com/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
         <title>JS设计模式</title>
-        <link rel="alternate" href="http://example.com/2022/11/18/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+        <link rel="alternate" href="http://example.com/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
         <content type="html">&lt;h1 id=&#34;javascript中的设计模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript中的设计模式&#34;&gt;#&lt;/a&gt; JavaScript 中的设计模式&lt;/h1&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
 &lt;p&gt;​		设计模式，往往是软件设计中的最佳实践，是前人对问题的解决经验的总结。我认为学习并理解设计模式，对自己的程序设计，软件开发有很大帮助，同时也可以扩展自己开发设计的思维。我是后来才明白，所有编程语言，都有设计模式这一说法，读《JavaScript 中的设计模式》这本书，给了我很大启发。&lt;/p&gt;

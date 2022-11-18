@@ -5,8 +5,8 @@
     "home_page_url": "http://example.com",
     "items": [
         {
-            "id": "http://example.com/2022/11/17/demo/",
-            "url": "http://example.com/2022/11/17/demo/",
+            "id": "http://example.com/demo/",
+            "url": "http://example.com/demo/",
             "title": "demo",
             "date_published": "2022-11-17T08:00:57.000Z",
             "content_html": "<p>hello~</p>\n",

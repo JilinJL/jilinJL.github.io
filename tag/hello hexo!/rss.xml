@@ -10,10 +10,13 @@
         <category>hello hexo!</category>
         <category>js</category>
         <category>es6</category>
+        <category>html</category>
+        <category>css</category>
+        <category>JS,es6</category>
         <item>
-            <guid isPermalink="true">http://example.com/2022/11/17/demo/</guid>
+            <guid isPermalink="true">http://example.com/demo/</guid>
             <title>demo</title>
-            <link>http://example.com/2022/11/17/demo/</link>
+            <link>http://example.com/demo/</link>
             <category>hello hexo!</category>
             <pubDate>Thu, 17 Nov 2022 16:00:57 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;hello~&lt;/p&gt;
