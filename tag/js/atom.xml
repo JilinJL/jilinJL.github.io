@@ -11,9 +11,10 @@
     <category term="JS" />
     <category term="es6" />
     <category term="js" />
+    <category term="java" />
     <entry>
         <id>https://jilinjl.github.io/js/react/React/</id>
-        <title></title>
+        <title>React更新中...</title>
         <link rel="alternate" href="https://jilinjl.github.io/js/react/React/"/>
         <content type="html">&lt;h1 id=&#34;react&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#react&#34;&gt;#&lt;/a&gt; React&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;什么是 React?&lt;/strong&gt;&lt;/p&gt;
