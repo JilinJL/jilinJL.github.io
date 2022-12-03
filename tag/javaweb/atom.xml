@@ -1,29 +1,23 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>寂林的小窝 • Posts by &#34;javaweb&#34; category</title>
-        <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
-        <language>zh-CN</language>
-        <pubDate>Sat, 03 Dec 2022 22:23:39 +0800</pubDate>
-        <lastBuildDate>Sat, 03 Dec 2022 22:23:39 +0800</lastBuildDate>
-        <category>hello hexo!</category>
-        <category>html</category>
-        <category>life</category>
-        <category>css</category>
-        <category>JS</category>
-        <category>es6</category>
-        <category>js</category>
-        <category>java</category>
-        <category>javaweb</category>
-        <item>
-            <guid isPermalink="true">https://jilinjl.github.io/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/</guid>
-            <title>饿了么项目接口实现_更新ing</title>
-            <link>https://jilinjl.github.io/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/</link>
-            <category>java</category>
-            <category>javaweb</category>
-            <pubDate>Sat, 03 Dec 2022 22:23:39 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;饿了么项目接口实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#饿了么项目接口实现&#34;&gt;#&lt;/a&gt; 饿了么项目接口实现&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jilinJL.github.io</id>
+    <title>寂林的小窝 • Posts by &#34;javaweb&#34; tag</title>
+    <link href="https://jilinJL.github.io" />
+    <updated>2022-12-03T14:23:39.423Z</updated>
+    <category term="hello hexo!" />
+    <category term="html" />
+    <category term="life" />
+    <category term="css" />
+    <category term="JS" />
+    <category term="es6" />
+    <category term="js" />
+    <category term="java" />
+    <category term="javaweb" />
+    <entry>
+        <id>https://jilinjl.github.io/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/</id>
+        <title>饿了么项目接口实现_更新ing</title>
+        <link rel="alternate" href="https://jilinjl.github.io/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/"/>
+        <content type="html">&lt;h1 id=&#34;饿了么项目接口实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#饿了么项目接口实现&#34;&gt;#&lt;/a&gt; 饿了么项目接口实现&lt;/h1&gt;
 &lt;h2 id=&#34;0初始化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#0初始化&#34;&gt;#&lt;/a&gt; 0. 初始化&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;设置 Tomcat 地址&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202212032201499.png&#34; alt=&#34;tomcat&#34;&gt;&lt;/p&gt;
@@ -109,16 +103,16 @@
 &lt;p&gt;&lt;strong&gt;UserServiceImpl&lt;/strong&gt; 接口实现&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;UserServiceImpl&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;implements&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;UserService&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;addUser&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(User user)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;getUserById&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(User user)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; User &lt;span class=&#34;title function_&#34;&gt;userLogin&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String userId, String password)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&#34;12业务实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12业务实现&#34;&gt;#&lt;/a&gt; 1.2 业务实现&lt;/h3&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://jilinjl.github.io/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/</guid>
-            <title>Javaweb项目基础</title>
-            <link>https://jilinjl.github.io/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/</link>
-            <category>java</category>
-            <category>javaweb</category>
-            <pubDate>Sat, 03 Dec 2022 14:06:56 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;一-javaweb&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-javaweb&#34;&gt;#&lt;/a&gt; 一、JavaWeb&lt;/h1&gt;
+</content>
+        <category term="java" />
+        <category term="javaweb" />
+        <updated>2022-12-03T14:23:39.423Z</updated>
+    </entry>
+    <entry>
+        <id>https://jilinjl.github.io/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/</id>
+        <title>Javaweb项目基础</title>
+        <link rel="alternate" href="https://jilinjl.github.io/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/"/>
+        <content type="html">&lt;h1 id=&#34;一-javaweb&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-javaweb&#34;&gt;#&lt;/a&gt; 一、JavaWeb&lt;/h1&gt;
 &lt;h2 id=&#34;1基本概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1基本概念&#34;&gt;#&lt;/a&gt; 1. 基本概念&lt;/h2&gt;
 &lt;h3 id=&#34;11-分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-分类&#34;&gt;#&lt;/a&gt; 1.1、分类&lt;/h3&gt;
 &lt;ul&gt;
@@ -285,7 +279,9 @@ https: 443&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;暂时先写这么多吧，基本上都是跟着老师视频做的，感觉还需要多熟悉多理解。 2022/12/3&lt;/p&gt;
 &lt;/blockquote&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="java" />
+        <category term="javaweb" />
+        <updated>2022-12-03T06:06:56.529Z</updated>
+    </entry>
+</feed>

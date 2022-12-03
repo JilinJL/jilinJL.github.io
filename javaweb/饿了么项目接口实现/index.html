@@ -1,0 +1,668 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+<meta name="referrer" content="no-referrer">
+<meta name="baidu-site-verification" content="code-dglt80cYFf">
+<meta name="msvalidate.01" content="5E35A151E828ADCA8EF9987425299BC8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="寂林的小窝" href="https://jilinjl.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="寂林的小窝" href="https://jilinjl.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="寂林的小窝" href="https://jilinjl.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="java,javaweb" />
+
+
+<link rel="canonical" href="https://jilinjl.github.io/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/">
+
+
+
+  <title>
+饿了么项目接口实现_更新ing - JavaWeb |
+Welcome = 寂林的小窝 = JiLin's Cave</title>
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">饿了么项目接口实现_更新ing
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-12-03 22:23:39">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-12-03T22:23:39+08:00">2022-12-03</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>5.1k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>5 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Welcome</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/javaweb/" itemprop="item" rel="index" title="分类于 JavaWeb"><span itemprop="name">JavaWeb</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://jilinjl.github.io/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="寂林">
+    <meta itemprop="description" content="JiLin's Cave, 飒飒西风满院栽,蕊寒香冷蝶难来">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="寂林的小窝">
+  </span>
+
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="<%= class_name %>">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="饿了么项目接口实现"><a class="markdownIt-Anchor" href="#饿了么项目接口实现">#</a> 饿了么项目接口实现</h1>
+<h2 id="0初始化"><a class="markdownIt-Anchor" href="#0初始化">#</a> 0. 初始化</h2>
+<p><strong>设置 Tomcat 地址</strong></p>
+<p><img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202212032201499.png" alt="tomcat"></p>
+<p><strong>indexServlet</strong> 一个统一 servlet 容器</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@WebServlet(name=&quot;indexServlet&quot;, urlPatterns = &quot;/&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">indexServlet</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line">        start(req,resp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line">        start(req, resp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException&#123;</span><br><span class="line">        <span class="type">PrintWriter</span> <span class="variable">writer</span> <span class="operator">=</span> resp.getWriter();</span><br><span class="line">        <span class="comment">//反射获取[path]路径</span></span><br><span class="line">        <span class="comment">//获取路径字符串</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">path</span> <span class="operator">=</span> req.getServletPath();</span><br><span class="line">        <span class="comment">//获取类名称</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">className</span> <span class="operator">=</span> path.substring(<span class="number">1</span>, path.lastIndexOf(<span class="string">&quot;/&quot;</span>));</span><br><span class="line">        <span class="comment">//获取方法名称</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">methodName</span> <span class="operator">=</span> path.substring(path.lastIndexOf(<span class="string">&quot;/&quot;</span>) + <span class="number">1</span>);</span><br><span class="line">        System.out.println(className + <span class="string">&quot;,&quot;</span> + methodName);</span><br><span class="line">        <span class="comment">//通过反射调用类的方法</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; clazz = Class.forName(<span class="string">&quot;com.jilin.controller.&quot;</span> + className);</span><br><span class="line">            <span class="comment">//创建类的对象 相当于new了一个</span></span><br><span class="line">            <span class="type">Object</span> <span class="variable">instance</span> <span class="operator">=</span> clazz.getConstructor().newInstance();</span><br><span class="line">            <span class="type">Method</span> <span class="variable">method</span> <span class="operator">=</span> clazz.getMethod(methodName,HttpServletRequest.class);</span><br><span class="line">            <span class="comment">//调用方法</span></span><br><span class="line">            <span class="type">Object</span> <span class="variable">object</span> <span class="operator">=</span> method.invoke(instance, req);</span><br><span class="line">            writer.write(JSON.toJSONString(object));</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">            ex.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>CORSFilter</strong> 设置跨域过滤器</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebFilter(&quot;/*&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">CORSFilter</span> <span class="keyword">implements</span> <span class="title class_">Filter</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doFilter</span><span class="params">(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)</span> <span class="keyword">throws</span> IOException, ServletException &#123;</span><br><span class="line">        <span class="type">HttpServletRequest</span> <span class="variable">request</span> <span class="operator">=</span> (HttpServletRequest) servletRequest;</span><br><span class="line">        <span class="type">HttpServletResponse</span> <span class="variable">response</span> <span class="operator">=</span> (HttpServletResponse) servletResponse;</span><br><span class="line">        <span class="comment">// 响应标头指定 指定可以访问资源的URI路径</span></span><br><span class="line">        response.setHeader(<span class="string">&quot;Access-Control-Allow-Origin&quot;</span>, request.getHeader(<span class="string">&quot;Origin&quot;</span>));</span><br><span class="line">        <span class="comment">//响应标头指定响应访问所述资源到时允许的一种或多种方法</span></span><br><span class="line">        response.setHeader(<span class="string">&quot;Access-Control-Allow-Methods&quot;</span>, <span class="string">&quot;POST, GET, PUT, OPTIONS, DELETE&quot;</span>);</span><br><span class="line">        <span class="comment">//设置 缓存可以生存的最大秒数</span></span><br><span class="line">        response.setHeader(<span class="string">&quot;Access-Control-Max-Age&quot;</span>, <span class="string">&quot;3600&quot;</span>);</span><br><span class="line">        <span class="comment">//设置  受支持请求标头</span></span><br><span class="line">        response.setHeader(<span class="string">&quot;Access-Control-Allow-Headers&quot;</span>, <span class="string">&quot;x-requested-with&quot;</span>);</span><br><span class="line">        <span class="comment">// 指示的请求的响应是否可以暴露于该页面。当true值返回时它可以被暴露</span></span><br><span class="line">        response.setHeader(<span class="string">&quot;Access-Control-Allow-Credentials&quot;</span>,<span class="string">&quot;true&quot;</span>);</span><br><span class="line">        filterChain.doFilter(servletRequest, servletResponse);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>mainFilter</strong> 防止乱码的过滤器，设置 utf8</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebFilter(filterName = &quot;mainFilter&quot;, urlPatterns = &quot;*&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">mainFilter</span> <span class="keyword">implements</span> <span class="title class_">Filter</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">(FilterConfig config)</span> <span class="keyword">throws</span> ServletException &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">destroy</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">doFilter</span><span class="params">(ServletRequest request, ServletResponse response, FilterChain chain)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line">        <span class="type">HttpServletRequest</span> <span class="variable">req</span> <span class="operator">=</span> (HttpServletRequest)request;</span><br><span class="line">        HttpServletResponse  resp= (HttpServletResponse)response;</span><br><span class="line">        req.setCharacterEncoding(<span class="string">&quot;UTF-8&quot;</span>);</span><br><span class="line">        resp.setContentType(<span class="string">&quot;text/html;charset=UTF-8&quot;</span>);</span><br><span class="line">        chain.doFilter(req, resp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1用户操作"><a class="markdownIt-Anchor" href="#1用户操作">#</a> 1. 用户操作</h2>
+<p>接口:</p>
+<blockquote>
+<h3 id="注册"><a class="markdownIt-Anchor" href="#注册">#</a> 注册</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">接口地址</th>
+<th>UserController/saveUser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>参数</strong></td>
+<td>user:{<br/>	userId:’’,        // 账号<br/>	password:’’,      // 密码<br/>	userName:’’,      // 用户名称<br/>	userSex:1       // 性别<br/>}</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>返回值</strong></td>
+<td><strong>int</strong> 影响的行数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="账号是否存在"><a class="markdownIt-Anchor" href="#账号是否存在">#</a> 账号是否存在</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">接口地址</th>
+<th>UserController/getUserById</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>参数</strong></td>
+<td>userId</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>返回值</strong></td>
+<td><strong>int</strong> 账号在数据库中存在的行数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="登录"><a class="markdownIt-Anchor" href="#登录">#</a> 登录</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">接口地址</th>
+<th>UserController/getUserByIdByPass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>参数</strong></td>
+<td>{<br/>    userId:this.userId, // 账号<br/>	password:this.password// 密码<br/>}</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>返回值</strong></td>
+<td><strong>User 对象</strong> <br />Class User {<br/>	private String userId;<br/>	private String password;<br/>	private String userName;<br/>	private Integer userSex;<br/>	private String userImg;<br/>	private Integer delTag;<br/>}</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h3 id="11结构"><a class="markdownIt-Anchor" href="#11结构">#</a> 1.1 结构</h3>
+<p><img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202212032159943.png" alt="结构1"></p>
+<p><strong>UserController</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserController</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//注册</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">saveUser</span><span class="params">(HttpServletRequest request)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//账号是否存在</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getUserById</span><span class="params">(HttpServletRequest request)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//登录</span></span><br><span class="line">    <span class="keyword">public</span> User <span class="title function_">getUserByIdByPass</span><span class="params">(HttpServletRequest request)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em><strong>UserDao</strong></em> 接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserDao</span> &#123;</span><br><span class="line">    <span class="comment">//注册</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">addUser</span><span class="params">(User user)</span>;</span><br><span class="line">    <span class="comment">//账号是否存在</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getUserById</span><span class="params">(User user)</span>;</span><br><span class="line">    <span class="comment">//登录</span></span><br><span class="line">    <span class="keyword">public</span> User <span class="title function_">userLogin</span><span class="params">(String userId,String password)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>UserDaoImpl</strong> 接口实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserDaoImpl</span> <span class="keyword">implements</span> <span class="title class_">UserDao</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">addUser</span><span class="params">(User user)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getUserById</span><span class="params">(User user)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> User <span class="title function_">userLogin</span><span class="params">(String userId, String password)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em><strong>User</strong></em> 实体类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.jilin.entity;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String userId;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">    <span class="keyword">private</span> String userName;</span><br><span class="line">    <span class="keyword">private</span> Integer userSex;</span><br><span class="line">    <span class="keyword">private</span> String userImg;</span><br><span class="line">    <span class="keyword">private</span> Integer delTag;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">User</span><span class="params">(String userId, String password, String userName, Integer userSex, String userImg, Integer delTag)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.userId = userId;</span><br><span class="line">        <span class="built_in">this</span>.password = password;</span><br><span class="line">        <span class="built_in">this</span>.userName = userName;</span><br><span class="line">        <span class="built_in">this</span>.userSex = userSex;</span><br><span class="line">        <span class="built_in">this</span>.userImg = userImg;</span><br><span class="line">        <span class="built_in">this</span>.delTag = delTag;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">User</span><span class="params">()</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">//get() and set() 过于冗长 这里不展示</span></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><em><strong>UserService</strong></em> 接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserService</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//注册</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">addUser</span><span class="params">(User user)</span>;</span><br><span class="line">    <span class="comment">//账号是否存在</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getUserById</span><span class="params">(User user)</span>;</span><br><span class="line">    <span class="comment">//登录</span></span><br><span class="line">    <span class="keyword">public</span> User <span class="title function_">userLogin</span><span class="params">(String userId,String password)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>UserServiceImpl</strong> 接口实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserServiceImpl</span> <span class="keyword">implements</span> <span class="title class_">UserService</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">addUser</span><span class="params">(User user)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getUserById</span><span class="params">(User user)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> User <span class="title function_">userLogin</span><span class="params">(String userId, String password)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="12业务实现"><a class="markdownIt-Anchor" href="#12业务实现">#</a> 1.2 业务实现</h3>
+
+      <div class="tags">
+          <a href="/tags/java/" rel="tag"><i class="ic i-tag"></i> java</a>
+          <a href="/tags/javaweb/" rel="tag"><i class="ic i-tag"></i> javaweb</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-12-03 22:22:43" itemprop="dateModified" datetime="2022-12-03T22:22:43+08:00">2022-12-03</time>
+  </span>
+  <span id="javaweb/饿了么项目接口实现/" class="item leancloud_visitors" data-flag-title="饿了么项目接口实现_更新ing" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="寂林 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="寂林 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>jilin <i class="ic i-at"><em>@</em></i>寂林的小窝
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://jilinjl.github.io/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/" title="饿了么项目接口实现_更新ing">https://jilinjl.github.io/javaweb/饿了么项目接口实现/</a>
+  </li>
+
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwrdwyaj20zk0m8are.jpg" title="Javaweb项目基础">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> JavaWeb</span>
+  <h3>Javaweb项目基础</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.</span> <span class="toc-text"> 饿了么项目接口实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text"> 0. 初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C"><span class="toc-number">1.2.</span> <span class="toc-text"> 1. 用户操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 注册</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A6%E5%8F%B7%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 账号是否存在</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 1.1 结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12%E4%B8%9A%E5%8A%A1%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.2.5.</span> <span class="toc-text"> 1.2 业务实现</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" rel="bookmark" title="Javaweb项目基础">Javaweb项目基础</a></li><li class="active"><a href="/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/" rel="bookmark" title="饿了么项目接口实现_更新ing">饿了么项目接口实现_更新ing</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="寂林"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">寂林</p>
+  <div class="description" itemprop="description">飒飒西风满院栽,蕊寒香冷蝶难来</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">11</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">8</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">9</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbGluSkw=" title="https:&#x2F;&#x2F;github.com&#x2F;jilinJL"><i class="ic i-github"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaS1saW4tamw=" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;ji-lin-jl"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQwOTkyMTIzOQ==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;409921239"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOndvc2hpamlsaW5AZm94bWFpbC5jb20=" title="mailto:woshijilin@foxmail.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/demo/" title="demo">demo</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/es6/" title="分类于 浅试一下ES6+">浅试一下ES6+</a>
+</div>
+
+    <span><a href="/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/" title="ES6">ES6</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/js/react/React/" title="React_更新ing">React_更新ing</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
+</div>
+
+    <span><a href="/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/" title="饿了么项目接口实现_更新ing">饿了么项目接口实现_更新ing</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/design-patterns/" title="分类于 JS设计模式">JS设计模式</a>
+</div>
+
+    <span><a href="/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="JS设计模式">JS设计模式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
+</div>
+
+    <span><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" title="Javaweb项目基础">Javaweb项目基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
+</div>
+
+    <span><a href="/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/" title="CSS的布局知识">CSS的布局知识</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/something/" title="分类于 something">something</a>
+</div>
+
+    <span><a href="/something/i/" title="I">I</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
+</div>
+
+    <span><a href="/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/" title="HTML-梦开始的地方">HTML-梦开始的地方</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
+</div>
+
+    <span><a href="/js/js-basic/JS%E5%9F%BA%E7%A1%80/" title="JS基础啦">JS基础啦</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-Jilin"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">寂林 @ Welcome</span>
+  </div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">129k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:57</span>
+  </div>
+
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'javaweb/饿了么项目接口实现/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
