@@ -5,8 +5,8 @@
         <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 06 Dec 2022 10:19:03 +0800</pubDate>
-        <lastBuildDate>Tue, 06 Dec 2022 10:19:03 +0800</lastBuildDate>
+        <pubDate>Tue, 06 Dec 2022 10:59:50 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Dec 2022 10:59:50 +0800</lastBuildDate>
         <category>hello hexo!</category>
         <category>html</category>
         <category>life</category>
@@ -17,6 +17,26 @@
         <category>java</category>
         <category>javaweb</category>
         <category>course</category>
+        <item>
+            <guid isPermalink="true">https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</guid>
+            <title>软件体系结构</title>
+            <link>https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</link>
+            <category>course</category>
+            <pubDate>Tue, 06 Dec 2022 10:59:50 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&#34;软件体系结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#软件体系结构&#34;&gt;#&lt;/a&gt; 软件体系结构&lt;/h1&gt;
+&lt;h2 id=&#34;1概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1概念&#34;&gt;#&lt;/a&gt; 1. 概念&lt;/h2&gt;
+&lt;h3 id=&#34;共性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#共性&#34;&gt;#&lt;/a&gt; 共性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;构件&lt;/li&gt;
+&lt;li&gt;连接件&lt;/li&gt;
+&lt;li&gt;物理分布&lt;/li&gt;
+&lt;li&gt;约束&lt;/li&gt;
+&lt;li&gt;性能&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;为什么需要软件体系结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么需要软件体系结构&#34;&gt;#&lt;/a&gt; 为什么需要软件体系结构&lt;/h3&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/</guid>
             <title>软件项目管理</title>
