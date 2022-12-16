@@ -1,30 +1,25 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>寂林的小窝 • Posts by &#34;something&#34; category</title>
-        <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
-        <language>zh-CN</language>
-        <pubDate>Fri, 16 Dec 2022 17:12:40 +0800</pubDate>
-        <lastBuildDate>Fri, 16 Dec 2022 17:12:40 +0800</lastBuildDate>
-        <category>hello hexo!</category>
-        <category>html</category>
-        <category>life</category>
-        <category>css</category>
-        <category>JS</category>
-        <category>es6</category>
-        <category>js</category>
-        <category>java</category>
-        <category>javaweb</category>
-        <category>course</category>
-        <category>tips</category>
-        <item>
-            <guid isPermalink="true">https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</guid>
-            <title>OBS虚拟摄像头</title>
-            <link>https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</link>
-            <category>tips</category>
-            <pubDate>Fri, 16 Dec 2022 17:12:40 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;一-下载安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-下载安装&#34;&gt;#&lt;/a&gt; 一、下载安装&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jilinJL.github.io</id>
+    <title>寂林的小窝 • Posts by &#34;tips&#34; tag</title>
+    <link href="https://jilinJL.github.io" />
+    <updated>2022-12-16T09:12:40.867Z</updated>
+    <category term="hello hexo!" />
+    <category term="html" />
+    <category term="life" />
+    <category term="css" />
+    <category term="JS" />
+    <category term="es6" />
+    <category term="js" />
+    <category term="java" />
+    <category term="javaweb" />
+    <category term="course" />
+    <category term="tips" />
+    <entry>
+        <id>https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</id>
+        <title>OBS虚拟摄像头</title>
+        <link rel="alternate" href="https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/"/>
+        <content type="html">&lt;h2 id=&#34;一-下载安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-下载安装&#34;&gt;#&lt;/a&gt; 一、下载安装&lt;/h2&gt;
 &lt;p&gt;下载方式有两种：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;官网下载&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9vYnNwcm9qZWN0LmNvbQ==&#34;&gt;https://obsproject.com&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;服务器在国外，速度可能较慢，你可以尝试使用下面的方法下载。&lt;/p&gt;
@@ -88,20 +83,8 @@
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202212161710331.png&#34; alt=&#34;image-20221216171044305&#34;&gt;&lt;/p&gt;
 &lt;p&gt;共享屏幕&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202212161711684.png&#34; alt=&#34;image-20221216171152643&#34;&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://jilinjl.github.io/something/i/</guid>
-            <title>I</title>
-            <link>https://jilinjl.github.io/something/i/</link>
-            <category>life</category>
-            <pubDate>Fri, 18 Nov 2022 21:59:07 +0800</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;​		我们这一生，好像都在奋力追逐着某样东西，它有时候近在咫尺，有时候渺茫无期。&lt;br&gt;
-​		我生来这个世界，是为了什么。我与同辈高谈阔论，看晚辈风华正茂，对长辈恭敬如宾。我的意识在控制着我，还是我在改变我的意识。自以为懂得很多，视他人如蜉蝣，可是我的尽头呢…… 如一望无垠，好像是充满机遇，可又有十足的踏空感。仿佛跌落云端，看尽朝夕晚霞，终究坠入深渊。&lt;br&gt;
-​		这是我能决定的吗？生老病死，自古如此，万物如此。我担当多少角色，做过多少善事恶事，，我，在想什么&lt;/p&gt;
-&lt;/blockquote&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="tips" />
+        <updated>2022-12-16T09:12:40.867Z</updated>
+    </entry>
+</feed>
