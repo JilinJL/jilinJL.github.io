@@ -7,17 +7,17 @@
         <language>zh-CN</language>
         <pubDate>Thu, 17 Nov 2022 22:56:14 +0800</pubDate>
         <lastBuildDate>Thu, 17 Nov 2022 22:56:14 +0800</lastBuildDate>
+        <category>course</category>
         <category>hello hexo!</category>
-        <category>html</category>
-        <category>life</category>
         <category>css</category>
-        <category>JS</category>
-        <category>es6</category>
-        <category>js</category>
+        <category>html</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>course</category>
         <category>tips</category>
+        <category>life</category>
+        <category>es6</category>
+        <category>js</category>
+        <category>JS</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</guid>
             <title>ES6</title>

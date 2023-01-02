@@ -7,17 +7,17 @@
         <language>zh-CN</language>
         <pubDate>Fri, 16 Dec 2022 17:12:40 +0800</pubDate>
         <lastBuildDate>Fri, 16 Dec 2022 17:12:40 +0800</lastBuildDate>
+        <category>course</category>
         <category>hello hexo!</category>
-        <category>html</category>
-        <category>life</category>
         <category>css</category>
-        <category>JS</category>
-        <category>es6</category>
-        <category>js</category>
+        <category>html</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>course</category>
         <category>tips</category>
+        <category>life</category>
+        <category>es6</category>
+        <category>js</category>
+        <category>JS</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</guid>
             <title>OBS虚拟摄像头</title>

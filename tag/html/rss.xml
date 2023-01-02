@@ -7,17 +7,17 @@
         <language>zh-CN</language>
         <pubDate>Fri, 18 Nov 2022 09:03:02 +0800</pubDate>
         <lastBuildDate>Fri, 18 Nov 2022 09:03:02 +0800</lastBuildDate>
+        <category>course</category>
         <category>hello hexo!</category>
-        <category>html</category>
-        <category>life</category>
         <category>css</category>
-        <category>JS</category>
-        <category>es6</category>
-        <category>js</category>
+        <category>html</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>course</category>
         <category>tips</category>
+        <category>life</category>
+        <category>es6</category>
+        <category>js</category>
+        <category>JS</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</guid>
             <title>HTML-梦开始的地方</title>
