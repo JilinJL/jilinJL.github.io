@@ -1,0 +1,719 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+<meta name="referrer" content="no-referrer">
+<meta name="baidu-site-verification" content="code-dglt80cYFf">
+<meta name="msvalidate.01" content="5E35A151E828ADCA8EF9987425299BC8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="寂林的小窝" href="https://jilinjl.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="寂林的小窝" href="https://jilinjl.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="寂林的小窝" href="https://jilinjl.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="TS" />
+
+
+<link rel="canonical" href="https://jilinjl.github.io/js/react/TypeScript/">
+
+
+
+  <title>
+TypeScript基础 - React - JavaScript |
+Welcome = 寂林的小窝 = JiLin's Cave</title>
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">TypeScript基础
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-02-03 14:44:43">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-02-03T14:44:43+08:00">2023-02-03</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>5.4k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>5 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Welcome</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?356314"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?215153"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?800981"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?562323"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?51609"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?86425"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/js/" itemprop="item" rel="index" title="分类于 JavaScript"><span itemprop="name">JavaScript</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/js/react/" itemprop="item" rel="index" title="分类于 React"><span itemprop="name">React</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://jilinjl.github.io/js/react/TypeScript/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="寂林">
+    <meta itemprop="description" content="JiLin's Cave, 飒飒西风满院栽,蕊寒香冷蝶难来">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="寂林的小窝">
+  </span>
+
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="<%= class_name %>">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="typescript基础"><a class="markdownIt-Anchor" href="#typescript基础">#</a> TypeScript 基础</h1>
+<p><code>TS是JS的超集，最主要的变化就是引入了Type，对每个变量可以声明类型，类似于其他面向对象语言（java，C#）。</code></p>
+<h2 id="安装配置"><a class="markdownIt-Anchor" href="#安装配置">#</a> 安装配置</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i typescript -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc xxx.ts 编译为js然后使用node运行</span><br></pre></td></tr></table></figure>
+<h2 id="类型明确"><a class="markdownIt-Anchor" href="#类型明确">#</a> 类型明确</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">数据类型</th>
+<th style="text-align:left">关键字</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">任意类型</td>
+<td style="text-align:left">any</td>
+<td style="text-align:left">声明为 any 的变量可以赋予任意类型的值。</td>
+</tr>
+<tr>
+<td style="text-align:left">数字类型</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">双精度 <strong>64</strong> 位浮点值。它可以用来表示整数和分数。</td>
+</tr>
+<tr>
+<td style="text-align:left">字符串类型</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">一个字符系列，使用单引号（<strong>’</strong>）或双引号（<strong>&quot;</strong>）来表示字符串类型。以及模板字符串: let words: string =  <code>您好，今年是 $&#123; name &#125; 发布 $&#123; years + 1&#125; 周年</code> ；` |</td>
+</tr>
+<tr>
+<td style="text-align:left">布尔类型</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">表示逻辑值：true 和 false。</td>
+</tr>
+<tr>
+<td style="text-align:left">数组类型</td>
+<td style="text-align:left">无</td>
+<td style="text-align:left">声明变量为数组。 <code>// 在元素类型后面加上[] let arr: number[] = [1, 2]; 或者使用数组泛型 let arr: Array&lt;number&gt; = [1, 2];</code></td>
+</tr>
+<tr>
+<td style="text-align:left">元组</td>
+<td style="text-align:left">无</td>
+<td style="text-align:left">元组类型用来表示<strong>已知元素数量</strong>和类型的数组，各元素的类型不必相同，<strong>对应位置的类型</strong>需要相同。 <code>let x: [string, number]; x = ['Runoob', 1];    // 运行正常 x = [1, 'Runoob'];    // 报错 console.log(x[0]);    // 输出 Runoob</code></td>
+</tr>
+<tr>
+<td style="text-align:left">枚举</td>
+<td style="text-align:left">enum</td>
+<td style="text-align:left">枚举类型用于定义数值集合。 <code>enum Color &#123;Red, Green, Blue&#125;; let c: Color = Color.Blue; console.log(c);    // 输出 2</code></td>
+</tr>
+<tr>
+<td style="text-align:left">void</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">用于标识方法返回值的类型，表示该方法没有返回值。 <code>function hello(): void &#123;    alert(&quot;Hello Runoob&quot;); &#125;</code></td>
+</tr>
+<tr>
+<td style="text-align:left">null</td>
+<td style="text-align:left">null</td>
+<td style="text-align:left">表示对象值缺失。</td>
+</tr>
+<tr>
+<td style="text-align:left">undefined</td>
+<td style="text-align:left">undefined</td>
+<td style="text-align:left">用于初始化变量为一个未定义的值</td>
+</tr>
+<tr>
+<td style="text-align:left">never</td>
+<td style="text-align:left">never</td>
+<td style="text-align:left">never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="定义类型"><a class="markdownIt-Anchor" href="#定义类型">#</a> 定义类型</h3>
+<h4 id="简单变量类型"><a class="markdownIt-Anchor" href="#简单变量类型">#</a> 简单变量类型</h4>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">sum</span>:<span class="built_in">number</span> = <span class="number">0</span>;</span><br><span class="line">sum=<span class="number">10</span>;</span><br><span class="line"><span class="comment">// sum=&quot;a&quot;;   --Type &#x27;string&#x27; is not assignable to type &#x27;number&#x27;.</span></span><br></pre></td></tr></table></figure>
+<h4 id="对象类型"><a class="markdownIt-Anchor" href="#对象类型">#</a> 对象类型</h4>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 对象的类型</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">Student</span>&#123;</span><br><span class="line">    <span class="attr">name</span>:<span class="built_in">string</span>; <span class="comment">//规定了Student对象内的字段类型</span></span><br><span class="line">    <span class="attr">age</span>:<span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">zs</span>:<span class="title class_">Student</span> = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;张三&quot;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">19</span>,</span><br><span class="line"><span class="comment">//  age: &quot;19&quot;,  Type &#x27;string&#x27; is not assignable to type &#x27;number&#x27;.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>可选属性</strong></p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#123;&#125; 指定对象内属性</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">student</span>: &#123;<span class="attr">name</span>: <span class="built_in">string</span>, <span class="attr">age</span>: <span class="built_in">number</span>&#125;</span><br><span class="line">student = &#123;<span class="attr">name</span>:<span class="string">&quot;张三&quot;</span>,<span class="attr">age</span>: <span class="number">19</span>&#125;</span><br><span class="line">student = &#123;<span class="attr">name</span>: <span class="string">&#x27;李四&#x27;</span>&#125;    <span class="comment">//缺少age属性,报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//在属性名后面加上 ? ,表示属性是可选的</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">teacher</span>: &#123;<span class="attr">name</span>: <span class="built_in">string</span>, age?:<span class="built_in">number</span>&#125;;</span><br><span class="line">teacher = &#123;<span class="attr">name</span>:<span class="string">&#x27;王老师&#x27;</span>,<span class="attr">age</span>: <span class="number">29</span>&#125;</span><br><span class="line">teacher = &#123;<span class="attr">name</span>:<span class="string">&#x27;张老师&#x27;</span>&#125;   <span class="comment">//缺少age属性,但不会报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//或者使用</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">master</span>: &#123;<span class="attr">name</span>: <span class="built_in">string</span>, [<span class="attr">other</span>: <span class="built_in">string</span>]: <span class="built_in">any</span>&#125;</span><br><span class="line">master = &#123;<span class="attr">name</span>:<span class="string">&quot;master&quot;</span>,<span class="attr">other</span>:<span class="string">&quot;其他随便添加也不会报错&quot;</span>,<span class="attr">habits</span>: <span class="string">&quot;football&quot;</span>&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(master);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//对于函数</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">add</span> = (<span class="params">a:<span class="built_in">number</span>,b:<span class="built_in">number</span></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">return</span> a+b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">add</span>(<span class="number">2</span>, <span class="number">3</span>));   <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<h4 id="枚举类型"><a class="markdownIt-Anchor" href="#枚举类型">#</a> 枚举类型</h4>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//enum 枚举类型</span></span><br><span class="line"><span class="keyword">enum</span> sex&#123;</span><br><span class="line">    <span class="title class_">Male</span> = <span class="number">1</span>,</span><br><span class="line">    <span class="title class_">Female</span> = <span class="number">2</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> tom = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Master&quot;</span>,</span><br><span class="line">    <span class="attr">sex</span>: sex.<span class="property">Male</span>,      <span class="comment">// 根据枚举中对应值,存储的实际上是 1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(tom);       <span class="comment">// &#123; name: &#x27;Master&#x27;, sex: 1 &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="组合类型"><a class="markdownIt-Anchor" href="#组合类型">#</a> 组合类型</h3>
+<h4 id="聚合"><a class="markdownIt-Anchor" href="#聚合">#</a> 聚合</h4>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> <span class="title class_">MyBool</span> = <span class="literal">true</span> | <span class="literal">false</span>;  <span class="comment">//自动归类为boolean</span></span><br></pre></td></tr></table></figure>
+<h4 id="泛型"><a class="markdownIt-Anchor" href="#泛型">#</a> 泛型</h4>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> <span class="title class_">StringArray</span> = <span class="title class_">Array</span>&lt;<span class="built_in">string</span>&gt;;</span><br><span class="line"><span class="keyword">type</span> <span class="title class_">NumberArray</span> = <span class="title class_">Array</span>&lt;<span class="built_in">number</span>&gt;;</span><br><span class="line"><span class="keyword">type</span> <span class="title class_">ObjectWithNameArray</span> = <span class="title class_">Array</span>&lt;&#123; <span class="attr">name</span>: <span class="built_in">string</span> &#125;&gt;;</span><br></pre></td></tr></table></figure>
+<h3 id="类型断言"><a class="markdownIt-Anchor" href="#类型断言">#</a> 类型断言</h3>
+<p>tips: unknown 类型比 any 类型更安全。</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">a</span>:<span class="built_in">any</span>;</span><br><span class="line">a=<span class="number">10</span>;</span><br><span class="line">a=<span class="string">&quot;str&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">b</span>:<span class="built_in">unknown</span>;</span><br><span class="line">b=<span class="number">10</span>;</span><br><span class="line">b=<span class="string">&quot;str&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="attr">c</span>:<span class="built_in">string</span>;</span><br><span class="line">c=a;  <span class="comment">//不会报错，但会把c也变成any类型.</span></span><br><span class="line">c=b;  <span class="comment">//会报错, Type &#x27;unknown&#x27; is not assignable to type &#x27;string&#x27;.</span></span><br><span class="line"></span><br><span class="line">断言:</span><br><span class="line">c = b <span class="keyword">as</span> <span class="title class_">String</span></span><br><span class="line">c = &lt;<span class="built_in">string</span>&gt;b;</span><br></pre></td></tr></table></figure>
+<h2 id="编译选项"><a class="markdownIt-Anchor" href="#编译选项">#</a> 编译选项</h2>
+<p><code>ts转js的相关配置写在根目录的tsconfig.json中</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    tsconfig.json 是ts编译器的配置文件</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="attr">&quot;compilerOptions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="comment">//include 表示哪些文件需要被编译</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//exclude 不需要编译的 默认值[&quot;node_modules&quot;,&quot;bower_components&quot;]</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 指定编译版本</span></span><br><span class="line">        <span class="attr">&quot;target&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ES6&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 指定模块化的标准</span></span><br><span class="line">        <span class="attr">&quot;module&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ES2015&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 指定使用的库</span></span><br><span class="line">        <span class="attr">&quot;lib&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;DOM&quot;</span><span class="punctuation">,</span><span class="string">&quot;ES6&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span>    </span><br><span class="line"></span><br><span class="line">        <span class="comment">// 指定编译后文件所在目录      </span></span><br><span class="line">        <span class="attr">&quot;outDir&quot;</span><span class="punctuation">:</span> <span class="string">&quot;dist&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置outFile后所有全局作用域中的代码会合并到一个文件</span></span><br><span class="line">        <span class="comment">// &quot;outFile&quot;: &quot;./dist/app.js&quot;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 是否编译JS文件</span></span><br><span class="line">        <span class="attr">&quot;allowJs&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 是否检查js代码语法规范</span></span><br><span class="line">        <span class="attr">&quot;checkJs&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 是否移除注释</span></span><br><span class="line">        <span class="attr">&quot;removeComments&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 不生成编译文件</span></span><br><span class="line">        <span class="attr">&quot;noEmit&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 不编译有错误的文件</span></span><br><span class="line">        <span class="attr">&quot;noEmitOnError&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 总是按照严格模式,默认为false</span></span><br><span class="line">        <span class="attr">&quot;alwaysStrict&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 不允许隐式any</span></span><br><span class="line">        <span class="attr">&quot;noImplicitAny&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 不允许不明类型的this</span></span><br><span class="line">        <span class="attr">&quot;noImplicitThis&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 严格检查空值</span></span><br><span class="line">        <span class="attr">&quot;strictNullChecks&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="打包配置"><a class="markdownIt-Anchor" href="#打包配置">#</a> 打包配置</h2>
+<p><strong>使用 webpack 打包</strong></p>
+<blockquote>
+<ol>
+<li>初始化</li>
+<li>安装对应包工具</li>
+<li>新建配置 webpack.config.js</li>
+<li>新建配置 tsconfig.json</li>
+<li>配置 package.json</li>
+<li>执行 npm run build 开始打包</li>
+</ol>
+</blockquote>
+<p>首先进入项目目录，初始化</p>
+<blockquote>
+<p>npm init -y</p>
+</blockquote>
+<p>然后安装主要包</p>
+<blockquote>
+<p>npm i -D webpack webpack-cli typescript ts-loader</p>
+</blockquote>
+<p>新建<mark> webpack</mark> 配置文件  <code>webpack.config.js</code></p>
+<p><img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202302031134232.png" alt="image-20230203113422164"></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// webpack.config.js</span></span><br><span class="line"><span class="comment">// 引入路径包</span></span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// webpack的所有配置都写在 module.exports中</span></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="comment">// 指定入口文件</span></span><br><span class="line">    <span class="attr">entry</span>: <span class="string">&quot;./src/index.ts&quot;</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 指定打包文件所在目录</span></span><br><span class="line">    <span class="attr">output</span>: &#123;</span><br><span class="line">        <span class="comment">// 指定打包文件的目录</span></span><br><span class="line">        <span class="attr">path</span>: path.<span class="title function_">resolve</span>(__dirname, <span class="string">&quot;dist&quot;</span>),</span><br><span class="line">        <span class="comment">// 打包后的文件名</span></span><br><span class="line">        <span class="attr">filename</span>: <span class="string">&quot;bundle.js&quot;</span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">//指定webpack打包时使用的模块</span></span><br><span class="line">    <span class="attr">module</span>:&#123;</span><br><span class="line">        <span class="comment">// 指定打包的规则</span></span><br><span class="line">        <span class="attr">rules</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">//test是指定的文件规则</span></span><br><span class="line">                <span class="attr">test</span>: <span class="regexp">/\.ts$/</span>,</span><br><span class="line">                <span class="attr">use</span>: <span class="string">&quot;ts-loader&quot;</span>,</span><br><span class="line">                <span class="comment">// 排除文件</span></span><br><span class="line">                <span class="attr">exclude</span>: <span class="regexp">/node_modules/</span></span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>新建 TS 配置文件  <code>tsconfig.json</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;compilerOptions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;target&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ES2015&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;module&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ES2015&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;strict&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>在 webpack 的  <code>package.json</code>  中配置 scripts, 加上一句</p>
+<blockquote>
+<p>“build”: “webpack”</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;test&quot;</span><span class="punctuation">:</span> <span class="string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;webpack&quot;</span>  <span class="comment">//加入这一句,直接运行build打包</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<p>最后执行 npm run build 进行打包 (这里报了一个 warning)</p>
+<p><img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202302031151111.png" alt="image-20230203115112069"></p>
+<p>原因是没有指定 mode, 在 webpack.config.js 中设置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="attr">entry</span>: <span class="string">&#x27;./src/app.js&#x27;</span>,</span><br><span class="line">    <span class="attr">output</span>: &#123;</span><br><span class="line">        <span class="attr">path</span>: path.<span class="title function_">resolve</span>(__dirname, <span class="string">&#x27;dist&#x27;</span>),</span><br><span class="line">        <span class="attr">filename</span>: <span class="string">&#x27;main.js&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">mode</span>: <span class="string">&#x27;development&#x27;</span> <span class="comment">// 设置mode</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>解决～</p>
+<p><img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202302031412974.png" alt="image-20230203141229926"></p>
+<h2 id="babel"><a class="markdownIt-Anchor" href="#babel">#</a> Babel</h2>
+<p>在 <code>webpack.config.js</code>  中添加以下 loader 配置：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">module.exports</span> <span class="string">=</span> &#123;</span><br><span class="line">  <span class="attr">module:</span> &#123;</span><br><span class="line">    <span class="attr">rules:</span> [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">test:</span> <span class="string">/.js$/</span>,</span><br><span class="line">        <span class="attr">exclude:</span> <span class="string">/node_modules/</span>,</span><br><span class="line">        <span class="attr">use:</span> [</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">loader:</span> <span class="string">&#x27;babel-loader&#x27;</span>,</span><br><span class="line">            <span class="attr">options:</span> &#123;</span><br><span class="line">              <span class="attr">presets:</span> [<span class="string">&quot;@babel/preset-env&quot;</span>]</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后安装相应的依赖：babel-loader、@babel/core、@babel/preset-env:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev babel-loader @babel/core @babel/preset-env</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上面是将 babel 的 preset 参数配置在了 webpack.config.js 中，实际上也可以将它按照 babel 配置文件的原则提取出来单独一个 babel.config.json 文件，效果是一样的。</p>
+</blockquote>
+<p>这样就完成了在 webpack 项目中添加 Babel 转换 ES6 + 代码的功能。在 webpack 打包的过程中，会将源代码经由 <code>babel-loader</code>  处理转换为目标代码，这一执行过程对我们来只说是打包时 “顺势而为” 的，我们再也不用关心 Babel 本身的命令细节了。</p>
+
+      <div class="tags">
+          <a href="/tags/TS/" rel="tag"><i class="ic i-tag"></i> TS</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-02-03 14:45:56" itemprop="dateModified" datetime="2023-02-03T14:45:56+08:00">2023-02-03</time>
+  </span>
+  <span id="js/react/TypeScript/" class="item leancloud_visitors" data-flag-title="TypeScript基础" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="寂林 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="寂林 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>jilin <i class="ic i-at"><em>@</em></i>寂林的小窝
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://jilinjl.github.io/js/react/TypeScript/" title="TypeScript基础">https://jilinjl.github.io/js/react/TypeScript/</a>
+  </li>
+
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/html-css/3.HTML%E5%9F%BA%E7%A1%80/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?246435" title="HTML基础">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> HTML+CSS</span>
+  <h3>HTML基础</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#typescript%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text"> TypeScript 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text"> 安装配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%A1%AE"><span class="toc-number">1.2.</span> <span class="toc-text"> 类型明确</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 定义类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.1.</span> <span class="toc-text"> 简单变量类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.2.</span> <span class="toc-text"> 对象类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.1.3.</span> <span class="toc-text"> 枚举类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 组合类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%81%9A%E5%90%88"><span class="toc-number">1.2.2.1.</span> <span class="toc-text"> 聚合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B"><span class="toc-number">1.2.2.2.</span> <span class="toc-text"> 泛型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E6%96%AD%E8%A8%80"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 类型断言</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9"><span class="toc-number">1.3.</span> <span class="toc-text"> 编译选项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%8C%85%E9%85%8D%E7%BD%AE"><span class="toc-number">1.4.</span> <span class="toc-text"> 打包配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#babel"><span class="toc-number">1.5.</span> <span class="toc-text"> Babel</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/js/react/React/" rel="bookmark" title="React_更新ing">React_更新ing</a></li><li class="active"><a href="/js/react/TypeScript/" rel="bookmark" title="TypeScript基础">TypeScript基础</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="寂林"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">寂林</p>
+  <div class="description" itemprop="description">飒飒西风满院栽,蕊寒香冷蝶难来</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">16</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">9</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">12</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbGluSkw=" title="https:&#x2F;&#x2F;github.com&#x2F;jilinJL"><i class="ic i-github"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaS1saW4tamw=" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;ji-lin-jl"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQwOTkyMTIzOQ==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;409921239"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOndvc2hpamlsaW5AZm94bWFpbC5jb20=" title="mailto:woshijilin@foxmail.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
+</div>
+
+    <span><a href="/html-css/3.HTML%E5%9F%BA%E7%A1%80/" title="HTML基础">HTML基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/something/" title="分类于 something">something</a>
+</div>
+
+    <span><a href="/something/i/" title="I">I</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
+</div>
+
+    <span><a href="/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/" title="饿了么项目接口实现_更新ing">饿了么项目接口实现_更新ing</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/js/react/React/" title="React_更新ing">React_更新ing</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/demo/" title="demo">demo</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/courses/" title="分类于 课程">课程</a>
+</div>
+
+    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/" title="软件项目管理">软件项目管理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/courses/" title="分类于 课程">课程</a>
+</div>
+
+    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" title="软件体系结构">软件体系结构</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/js/react/TypeScript/" title="TypeScript基础">TypeScript基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
+</div>
+
+    <span><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" title="Javaweb项目基础">Javaweb项目基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
+</div>
+
+    <span><a href="/js/js-basic/JavaScript%20%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="JS面试知识点">JS面试知识点</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-Jilin"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">寂林 @ Welcome</span>
+  </div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">160k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:25</span>
+  </div>
+
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'js/react/TypeScript/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
