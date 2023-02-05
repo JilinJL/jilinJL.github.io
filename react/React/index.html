@@ -30,12 +30,12 @@
   <meta name="keywords" content="JS" />
 
 
-<link rel="canonical" href="https://jilinjl.github.io/js/react/React/">
+<link rel="canonical" href="https://jilinjl.github.io/react/React/">
 
 
 
   <title>
-React_更新ing - React - JavaScript |
+React基础 - React |
 Welcome = 寂林的小窝 = JiLin's Cave</title>
 <meta name="generator" content="Hexo 5.4.2"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -63,7 +63,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">React_更新ing
+  <h1 itemprop="name headline">React基础
   </h1>
   
 <div class="meta">
@@ -79,7 +79,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>1.7k</span>
+    <span>1.9k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -120,12 +120,12 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?785434"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?316825"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?786706"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?731543"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?731755"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?478038"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?330253"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?50469"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?507424"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?232233"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?136992"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?347877"></li>
         </ul>
       </div>
     </header>
@@ -151,15 +151,12 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
 <span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
-<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/js/" itemprop="item" rel="index" title="分类于 JavaScript"><span itemprop="name">JavaScript</span></a>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/react/" itemprop="item" rel="index" title="分类于 React"><span itemprop="name">React</span></a>
 <meta itemprop="position" content="1" /></span>
-<i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/js/react/" itemprop="item" rel="index" title="分类于 React"><span itemprop="name">React</span></a>
-<meta itemprop="position" content="2" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://jilinjl.github.io/js/react/React/">
+  <link itemprop="mainEntityOfPage" href="https://jilinjl.github.io/react/React/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -194,9 +191,10 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
 </ol>
 <p><strong>前置 JS 知识</strong></p>
 <p>判断 this 指向，class 类，ES6，npm 包，原型、原型链，数组操作，模块化</p>
-<h3 id="1helloworld"><a class="markdownIt-Anchor" href="#1helloworld">#</a> 1.HelloWorld</h3>
+<h2 id="jsx"><a class="markdownIt-Anchor" href="#jsx">#</a> jsx</h2>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>hello react<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--准备好一个“容器”--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;demo&quot;</span>&gt;</span>?<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--引入核心库--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcss.com/react/16.4.0/umd/react.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcss.com/react-dom/16.4.0/umd/react-dom.development.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/babel&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">      <span class="comment">//1.创建虚拟DOM</span></span></span><br><span class="line"><span class="language-javascript">      <span class="keyword">const</span> <span class="variable constant_">VDOM</span> = <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span>;</span></span><br><span class="line"><span class="language-javascript">      <span class="comment">//2.渲染虚拟DOM到页面</span></span></span><br><span class="line"><span class="language-javascript">      <span class="title class_">ReactDOM</span>.<span class="title function_">render</span>(<span class="variable constant_">VDOM</span>, <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;demo&quot;</span>));</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><strong>需要注意的点</strong>：</p>
+<blockquote>
 <ol>
 <li>
 <p>&lt;script&gt; 标签内要写 ‘text/babel’</p>
@@ -205,16 +203,37 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
 <p>const VDOM = &lt;h1&gt;hello…&lt;h1&gt;  这里不要加 “” 或者  ‘’</p>
 </li>
 </ol>
+</blockquote>
 <p><mark>为什么 React 要求用 JSX 而不是 JS ？？</mark></p>
 <p>如果需要用到标签嵌套，jsx 更方便，而 js 创建虚拟 dom 会非常繁琐</p>
-<h4 id="真实dom和虚拟dom区别"><a class="markdownIt-Anchor" href="#真实dom和虚拟dom区别">#</a> 真实 DOM 和虚拟 DOM 区别？</h4>
-<p><img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202211301045654.png" alt="image-20221130104457572"></p>
+<h3 id="真实dom和虚拟dom"><a class="markdownIt-Anchor" href="#真实dom和虚拟dom">#</a> 真实 DOM 和虚拟 DOM</h3>
+<p><img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202302051427078.png" alt="image-20221130104457572"></p>
 <blockquote>
 <p>关于虚拟 DOM</p>
 <p>​    1. 本质上是 Object 对象</p>
 <p>​    2. 虚拟 DOM 比较 &quot;轻&quot;, 真实 DOM 比较 &quot;重&quot;, 因为虚拟 DOM 是 React 内部在用，无需真实 DOM 上那么多属性</p>
-<p>​    3. 虚拟 DOM 最终会被 React 转化为真实 DOM, 呈现在页面上</p>
+<pre><code>3. 虚拟DOM最终会被React转化为真实DOM,呈现在页面上
+</code></pre>
 </blockquote>
+<h3 id="jsx语法规则"><a class="markdownIt-Anchor" href="#jsx语法规则">#</a> JSX 语法规则</h3>
+<ul>
+<li>​        读取数据要用</li>
+<li>​        读取 class 属性要用 className=xxx 而非 class= ‘’</li>
+<li>​        添加内联样式 style=&lt;!–swig￼1–&gt;, 即第一个 {} 内写一个样式对象 {}</li>
+<li>​        虚拟 DOM 只能有一个根标签</li>
+<li>​        标签必须闭合 <input type="xxx" />或者 <input type="hidden"></input></li>
+<li>​        标签渲染
+<ul>
+<li>1. 若标签首字母小写，则将标签转为 html 中对应的同名标签，若 html 无对应标签，则报错；</li>
+<li>2. 若首字母大写，则 react 会渲染对应的组件，若没有，则报错；</li>
+</ul>
+</li>
+</ul>
+<h2 id="组件化"><a class="markdownIt-Anchor" href="#组件化">#</a> 组件化</h2>
+<h3 id="安装插件"><a class="markdownIt-Anchor" href="#安装插件">#</a> 安装插件</h3>
+<p><strong>React Developer Tools</strong><br>
+<img data-src="https://gitee.com/jilinJL/my-pictures/raw/master/img/202302051423490.png" alt="image-20230205142139780"></p>
+<h2 id="应用"><a class="markdownIt-Anchor" href="#应用">#</a> 应用</h2>
 
       <div class="tags">
           <a href="/tags/JS/" rel="tag"><i class="ic i-tag"></i> JS</a>
@@ -229,9 +248,9 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-12-03 22:23:14" itemprop="dateModified" datetime="2022-12-03T22:23:14+08:00">2022-12-03</time>
+    <time title="修改时间：2023-02-05 14:27:53" itemprop="dateModified" datetime="2023-02-05T14:27:53+08:00">2023-02-05</time>
   </span>
-  <span id="js/react/React/" class="item leancloud_visitors" data-flag-title="React_更新ing" title="阅读次数">
+  <span id="react/React/" class="item leancloud_visitors" data-flag-title="React基础" title="阅读次数">
       <span class="icon">
         <i class="ic i-eye"></i>
       </span>
@@ -268,7 +287,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://jilinjl.github.io/js/react/React/" title="React_更新ing">https://jilinjl.github.io/js/react/React/</a>
+    <a href="https://jilinjl.github.io/react/React/" title="React基础">https://jilinjl.github.io/react/React/</a>
   </li>
 
 </ul>
@@ -285,7 +304,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
     <div class="item left">
       
 
-  <a href="/something/i/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?402098" title="I">
+  <a href="/something/i/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?26561" title="I">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> something</span>
   <h3>I</h3>
@@ -295,7 +314,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
     <div class="item right">
       
 
-  <a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" itemprop="url" rel="next" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?880970" title="Javaweb项目基础">
+  <a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" itemprop="url" rel="next" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?996211" title="Javaweb项目基础">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> JavaWeb</span>
   <h3>Javaweb项目基础</h3>
@@ -317,11 +336,11 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#react"><span class="toc-number">1.</span> <span class="toc-text"> React</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1helloworld"><span class="toc-number">1.0.1.</span> <span class="toc-text"> 1.HelloWorld</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9C%9F%E5%AE%9Edom%E5%92%8C%E8%99%9A%E6%8B%9Fdom%E5%8C%BA%E5%88%AB"><span class="toc-number">1.0.1.1.</span> <span class="toc-text"> 真实 DOM 和虚拟 DOM 区别？</span></a></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#react"><span class="toc-number">1.</span> <span class="toc-text"> React</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jsx"><span class="toc-number">1.1.</span> <span class="toc-text"> jsx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9C%9F%E5%AE%9Edom%E5%92%8C%E8%99%9A%E6%8B%9Fdom"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 真实 DOM 和虚拟 DOM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jsx%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99"><span class="toc-number">1.1.2.</span> <span class="toc-text"> JSX 语法规则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E5%8C%96"><span class="toc-number">1.2.</span> <span class="toc-text"> 组件化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 安装插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text"> 应用</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/js/react/React/" rel="bookmark" title="React_更新ing">React_更新ing</a></li><li><a href="/js/react/TypeScript/" rel="bookmark" title="TypeScript基础">TypeScript基础</a></li>
+          <li class="active"><a href="/react/React/" rel="bookmark" title="React基础">React基础</a></li><li><a href="/react/TypeScript/" rel="bookmark" title="TypeScript基础">TypeScript基础</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -439,10 +458,10 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
+<a href="/categories/react/" title="分类于 React">React</a>
 </div>
 
-    <span><a href="/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/" title="CSS的布局知识">CSS的布局知识</a></span>
+    <span><a href="/react/React/" title="React基础">React基础</a></span>
   </li>
 
       
@@ -459,12 +478,30 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
 </div>
 
-    <span><a href="/js/js-basic/JavaScript%20%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="JS面试知识点">JS面试知识点</a></span>
+    <span><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" title="Javaweb项目基础">Javaweb项目基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/courses/" title="分类于 课程">课程</a>
+</div>
+
+    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/" title="软件项目管理">软件项目管理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/react/TypeScript/" title="TypeScript基础">TypeScript基础</a></span>
   </li>
 
       
@@ -483,34 +520,10 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/js/react/" title="分类于 React">React</a>
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
 </div>
 
-    <span><a href="/js/react/React/" title="React_更新ing">React_更新ing</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/js/es6/" title="分类于 浅试一下ES6+">浅试一下ES6+</a>
-</div>
-
-    <span><a href="/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/" title="ES6">ES6</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/something/" title="分类于 something">something</a>
-</div>
-
-    <span><a href="/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/" title="OBS虚拟摄像头">OBS虚拟摄像头</a></span>
+    <span><a href="/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/" title="饿了么项目接口实现_更新ing">饿了么项目接口实现_更新ing</a></span>
   </li>
 
       
@@ -520,7 +533,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
 <a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
 </div>
 
-    <span><a href="/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/" title="HTML-梦开始的地方">HTML-梦开始的地方</a></span>
+    <span><a href="/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/" title="CSS的布局知识">CSS的布局知识</a></span>
   </li>
 
       
@@ -539,10 +552,12 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
 </div>
 
-    <span><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" title="Javaweb项目基础">Javaweb项目基础</a></span>
+    <span><a href="/js/js-basic/JavaScript%20%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="JS面试知识点">JS面试知识点</a></span>
   </li>
 
   </ul>
@@ -569,7 +584,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">161k 字</span>
+    <span title="站点总字数">162k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
@@ -595,7 +610,7 @@ Welcome = 寂林的小窝 = JiLin's Cave</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'js/react/React/',
+    path: 'react/React/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"

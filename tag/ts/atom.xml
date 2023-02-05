@@ -17,9 +17,9 @@
     <category term="JS" />
     <category term="TS" />
     <entry>
-        <id>https://jilinjl.github.io/js/react/TypeScript/</id>
+        <id>https://jilinjl.github.io/react/TypeScript/</id>
         <title>TypeScript基础</title>
-        <link rel="alternate" href="https://jilinjl.github.io/js/react/TypeScript/"/>
+        <link rel="alternate" href="https://jilinjl.github.io/react/TypeScript/"/>
         <content type="html">&lt;h1 id=&#34;typescript基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#typescript基础&#34;&gt;#&lt;/a&gt; TypeScript 基础&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;TS是JS的超集，最主要的变化就是引入了Type，对每个变量可以声明类型，类似于其他面向对象语言（java，C#）。&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;安装配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装配置&#34;&gt;#&lt;/a&gt; 安装配置&lt;/h2&gt;
