@@ -1,0 +1,597 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+<meta name="referrer" content="no-referrer">
+<meta name="baidu-site-verification" content="code-dglt80cYFf">
+<meta name="msvalidate.01" content="5E35A151E828ADCA8EF9987425299BC8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="寂林的小窝" href="https://jilinjl.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="寂林的小窝" href="https://jilinjl.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="寂林的小窝" href="https://jilinjl.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="JS,data-structure" />
+
+
+<link rel="canonical" href="https://jilinjl.github.io/data-structure/5.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%93%BE%E8%A1%A8/">
+
+
+
+  <title>
+JS数据结构-双向链表 - 数据结构 |
+Welcome = 寂林的小窝 = JiLin's Cave</title>
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">JS数据结构-双向链表
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-03-02 22:58:59">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-03-02T22:58:59+08:00">2023-03-02</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>3.7k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>3 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Welcome</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?574418"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?647731"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?447111"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?347878"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?512471"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?336135"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/data-structure/" itemprop="item" rel="index" title="分类于 数据结构"><span itemprop="name">数据结构</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://jilinjl.github.io/data-structure/5.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%93%BE%E8%A1%A8/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="寂林">
+    <meta itemprop="description" content="JiLin's Cave, 飒飒西风满院栽,蕊寒香冷蝶难来">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="寂林的小窝">
+  </span>
+
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="<%= class_name %>">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="双向链表"><a class="markdownIt-Anchor" href="#双向链表">#</a> 双向链表</h2>
+<p>😫太麻烦了 next😁next😅next😐next😖再也不想写第二遍了</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先定义节点类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Node</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">data</span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">value</span> = data</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">next</span> = <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义链表</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LinkedList</span> &#123;</span><br><span class="line">    head = <span class="literal">null</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 1.添加节点</span></span><br><span class="line">    <span class="title function_">push</span>(<span class="params">element</span>) &#123;</span><br><span class="line">        <span class="keyword">let</span> node = <span class="keyword">new</span> <span class="title class_">Node</span>(element)</span><br><span class="line">        <span class="comment">//判断是否为空</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="property">head</span> === <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="comment">//链表为空 新加的节点就是头</span></span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">head</span> = node</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">let</span> current = <span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">            <span class="keyword">while</span> (current.<span class="property">next</span>) &#123;       <span class="comment">//while循环到最后一个节点</span></span><br><span class="line">                current = current.<span class="property">next</span></span><br><span class="line">            &#125;</span><br><span class="line">            current.<span class="property">next</span> = node</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">count</span>++</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 2.删除指定位置的节点: xyz x.next = y.next 删除y</span></span><br><span class="line">    <span class="title function_">removeAt</span>(<span class="params">position</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (position &gt;= <span class="number">0</span> &amp;&amp; position &lt; <span class="variable language_">this</span>.<span class="property">count</span>) &#123;</span><br><span class="line">            <span class="keyword">let</span> current = <span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">            <span class="keyword">if</span> (position === <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="variable language_">this</span>.<span class="property">head</span> = <span class="variable language_">this</span>.<span class="property">head</span>.<span class="property">next</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">let</span> previous = <span class="literal">null</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; position; i++) &#123;</span><br><span class="line">                    previous = current        <span class="comment">//不断往右移动</span></span><br><span class="line">                    current = current.<span class="property">next</span></span><br><span class="line">                &#125;</span><br><span class="line">                previous.<span class="property">next</span> = current.<span class="property">next</span></span><br><span class="line">                current.<span class="property">next</span> = <span class="literal">null</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">count</span>--</span><br><span class="line">            <span class="keyword">return</span> current</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 3.在指定位置插入一个节点</span></span><br><span class="line">    <span class="title function_">insert</span>(<span class="params">element, position</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(position&lt;<span class="number">0</span>||position&gt;<span class="variable language_">this</span>.<span class="property">count</span>) <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">        <span class="keyword">let</span> node = <span class="keyword">new</span> <span class="title class_">Node</span>(element)</span><br><span class="line">        <span class="keyword">if</span> (position === <span class="number">0</span>) &#123;</span><br><span class="line">            node.<span class="property">next</span> = <span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">head</span> = node</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(position === <span class="variable language_">this</span>.<span class="property">count</span>)&#123;</span><br><span class="line">            <span class="variable language_">this</span>.<span class="title function_">push</span>(element)</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">let</span> previous = <span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">let</span> i =<span class="number">0</span>;i&lt;position-<span class="number">1</span>;i++)&#123;</span><br><span class="line">                previous = previous.<span class="property">next</span></span><br><span class="line">            &#125;</span><br><span class="line">            node.<span class="property">next</span> = previous.<span class="property">next</span></span><br><span class="line">            previous.<span class="property">next</span> = node</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">count</span>++</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 4.获取指定位置的节点</span></span><br><span class="line">    <span class="title function_">getElementAt</span>(<span class="params">index</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(index&lt;<span class="number">0</span> || index&gt;<span class="variable language_">this</span>.<span class="property">count</span>) <span class="keyword">return</span> <span class="literal">undefined</span></span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">let</span> current = <span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;index-<span class="number">1</span>;i++)&#123;</span><br><span class="line">                current = current.<span class="property">next</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> current</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 5.返回某个节点的下标</span></span><br><span class="line">    <span class="title function_">indexOf</span>(<span class="params">element</span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> current = <span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="variable language_">this</span>.<span class="property">count</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="title function_">isEqual</span>(current.<span class="property">value</span>,element))&#123;</span><br><span class="line">                <span class="keyword">return</span> i</span><br><span class="line">            &#125;</span><br><span class="line">            current = current.<span class="property">next</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ** 封装一个递归判断相等的函数 这里暂时先用JSON.stringify **</span></span><br><span class="line">    <span class="title function_">isEqual</span>(<span class="params">a,b</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(a)===<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(b)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 6.从链表中删除一个元素</span></span><br><span class="line">    <span class="title function_">remove</span>(<span class="params">element</span>)&#123;</span><br><span class="line">        <span class="keyword">const</span> index = <span class="variable language_">this</span>.<span class="title function_">indexOf</span>(element)</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">removeAt</span>(index)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 7.获取链表的大小</span></span><br><span class="line">    <span class="title function_">size</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">count</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 8.判断是否为空</span></span><br><span class="line">    <span class="title function_">isEmpty</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">count</span>===<span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 9.重写toString方法输出所有值</span></span><br><span class="line">    <span class="title function_">toString</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> str = <span class="string">&#x27;&#x27;</span></span><br><span class="line">        <span class="keyword">let</span> current = <span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="variable language_">this</span>.<span class="property">count</span>;i++)&#123;</span><br><span class="line">            str+=<span class="title class_">String</span>(current.<span class="property">value</span>)</span><br><span class="line">            current = current.<span class="property">next</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> str</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>** 双向链表继承普通链表 ** 重写部分方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 双端链表节点继承Node</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">DoublyNode</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Node</span>&#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">element</span>)&#123;</span><br><span class="line">    <span class="variable language_">super</span>(element)</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">prev</span> = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 双端链表继承LinkedList</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">DoublyLinkedList</span> <span class="keyword">extends</span> <span class="title class_ inherited__">LinkedList</span>&#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">super</span>()</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">tail</span> = <span class="literal">null</span> </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="title function_">push</span>(<span class="params">element</span>)&#123;</span><br><span class="line">    <span class="keyword">const</span> node = <span class="keyword">new</span> <span class="title class_">DoublyNode</span>(element)</span><br><span class="line">    <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">head</span>===<span class="literal">null</span>)&#123; <span class="comment">//第一个</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">head</span>=node</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">tail</span>=node</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">tail</span>.<span class="property">next</span>=node</span><br><span class="line">      node.<span class="property">prev</span>=<span class="variable language_">this</span>.<span class="property">tail</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">tail</span>=node</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">count</span>++</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="title function_">insert</span>(<span class="params">element,position</span>)&#123;</span><br><span class="line">    <span class="keyword">const</span> node = <span class="keyword">new</span> <span class="title class_">DoublyNode</span>(element)</span><br><span class="line">    <span class="keyword">if</span>(position&lt;<span class="number">0</span>||position&gt;<span class="variable language_">this</span>.<span class="property">count</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(position===<span class="number">0</span> &amp;&amp; <span class="variable language_">this</span>.<span class="property">head</span>===<span class="literal">null</span>)&#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">head</span>=node</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">tail</span>=node</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(position===<span class="number">0</span> &amp;&amp; <span class="variable language_">this</span>.<span class="property">head</span>)&#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">head</span>.<span class="property">prev</span>=node</span><br><span class="line">      node.<span class="property">next</span>=<span class="variable language_">this</span>.<span class="property">head</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">head</span>=node</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(position===<span class="variable language_">this</span>.<span class="property">count</span>)&#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">tail</span>.<span class="property">next</span>=node</span><br><span class="line">      node.<span class="property">prev</span>=<span class="variable language_">this</span>.<span class="property">tail</span></span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">tail</span>=node</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="keyword">const</span> previous = <span class="variable language_">this</span>.<span class="title function_">getElementAt</span>(position-<span class="number">1</span>)   <span class="comment">//之前封装好的方法</span></span><br><span class="line">      <span class="keyword">let</span> current = previous.<span class="property">next</span></span><br><span class="line">      node.<span class="property">next</span> = current</span><br><span class="line">      current.<span class="property">prev</span>=node</span><br><span class="line">      previous.<span class="property">next</span> = node</span><br><span class="line">      node.<span class="property">prev</span>=previous</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">count</span>++</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="title function_">removeAt</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="comment">// 与普通链表差别不大</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="title function_">getHead</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="comment">// 与普通链表差别不大</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Db</span> = <span class="keyword">new</span> <span class="title class_">DoublyLinkedList</span>()</span><br><span class="line"><span class="title class_">Db</span>.<span class="title function_">push</span>(<span class="number">1</span>)	<span class="comment">// 1</span></span><br><span class="line"><span class="title class_">Db</span>.<span class="title function_">push</span>(<span class="number">5</span>)	<span class="comment">// 1 &lt;&gt; 5</span></span><br><span class="line"><span class="title class_">Db</span>.<span class="title function_">push</span>(<span class="number">7</span>)	<span class="comment">// 1 &lt;&gt; 5 &lt;&gt; 7</span></span><br><span class="line"><span class="title class_">Db</span>.<span class="title function_">insert</span>(<span class="number">10</span>,<span class="number">1</span>)  <span class="comment">//t 1 &lt;&gt; 10 &lt;&gt; 5 &lt;&gt; 7</span></span><br></pre></td></tr></table></figure>
+<p><img data-src="C:%5CUsers%5Cjilin%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230302093305540.png" alt="image-20230302093305540"></p>
+
+      <div class="tags">
+          <a href="/tags/JS/" rel="tag"><i class="ic i-tag"></i> JS</a>
+          <a href="/tags/data-structure/" rel="tag"><i class="ic i-tag"></i> data-structure</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-03-02 23:01:30" itemprop="dateModified" datetime="2023-03-02T23:01:30+08:00">2023-03-02</time>
+  </span>
+  <span id="data-structure/5.数据结构--双端链表/" class="item leancloud_visitors" data-flag-title="JS数据结构-双向链表" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="寂林 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="寂林 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>jilin <i class="ic i-at"><em>@</em></i>寂林的小窝
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://jilinjl.github.io/data-structure/5.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%93%BE%E8%A1%A8/" title="JS数据结构-双向链表">https://jilinjl.github.io/data-structure/5.数据结构--双端链表/</a>
+  </li>
+
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/data-structure/4.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?125381" title="JS数据结构-链表">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 数据结构</span>
+  <h3>JS数据结构-链表</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/" itemprop="url" rel="next" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?298440" title="JS数据结构-集合">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 数据结构</span>
+  <h3>JS数据结构-集合</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text"> 双向链表</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/data-structure/1.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%88/" rel="bookmark" title="JS数据结构-栈">JS数据结构-栈</a></li><li><a href="/data-structure/2.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%98%9F%E5%88%97/" rel="bookmark" title="JS数据结构-队列">JS数据结构-队列</a></li><li><a href="/data-structure/3.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97/" rel="bookmark" title="JS数据结构-双端队列">JS数据结构-双端队列</a></li><li><a href="/data-structure/4.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/" rel="bookmark" title="JS数据结构-链表">JS数据结构-链表</a></li><li class="active"><a href="/data-structure/5.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%93%BE%E8%A1%A8/" rel="bookmark" title="JS数据结构-双向链表">JS数据结构-双向链表</a></li><li><a href="/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/" rel="bookmark" title="JS数据结构-集合">JS数据结构-集合</a></li><li><a href="/data-structure/7.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%AD%97%E5%85%B8/" rel="bookmark" title="JS数据结构-字典">JS数据结构-字典</a></li><li><a href="/data-structure/8.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" rel="bookmark" title="JS数据结构-二叉搜索树">JS数据结构-二叉搜索树</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="寂林"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">寂林</p>
+  <div class="description" itemprop="description">飒飒西风满院栽,蕊寒香冷蝶难来</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">24</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">10</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">13</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbGluSkw=" title="https:&#x2F;&#x2F;github.com&#x2F;jilinJL"><i class="ic i-github"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaS1saW4tamw=" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;ji-lin-jl"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQwOTkyMTIzOQ==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;409921239"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOndvc2hpamlsaW5AZm94bWFpbC5jb20=" title="mailto:woshijilin@foxmail.com"><i class="ic i-envelope"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/data-structure/4.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/es6/" title="分类于 浅试一下ES6+">浅试一下ES6+</a>
+</div>
+
+    <span><a href="/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/" title="ES6">ES6</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/react/" title="分类于 React">React</a>
+</div>
+
+    <span><a href="/react/React/" title="React基础">React基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/courses/" title="分类于 课程">课程</a>
+</div>
+
+    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/" title="软件项目管理">软件项目管理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/data-structure/" title="分类于 数据结构">数据结构</a>
+</div>
+
+    <span><a href="/data-structure/8.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" title="JS数据结构-二叉搜索树">JS数据结构-二叉搜索树</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/design-patterns/" title="分类于 JS设计模式">JS设计模式</a>
+</div>
+
+    <span><a href="/js/design-patterns/JS%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="JS设计模式">JS设计模式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
+</div>
+
+    <span><a href="/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/" title="HTML-梦开始的地方">HTML-梦开始的地方</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/something/" title="分类于 something">something</a>
+</div>
+
+    <span><a href="/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/" title="OBS虚拟摄像头">OBS虚拟摄像头</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/data-structure/" title="分类于 数据结构">数据结构</a>
+</div>
+
+    <span><a href="/data-structure/7.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%AD%97%E5%85%B8/" title="JS数据结构-字典">JS数据结构-字典</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
+</div>
+
+    <span><a href="/js/js-basic/JavaScript%20%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="JS面试知识点">JS面试知识点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
+</div>
+
+    <span><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" title="Javaweb项目基础">Javaweb项目基础</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-Jilin"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">寂林 @ Welcome</span>
+  </div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">189k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:51</span>
+  </div>
+
+
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_site_pv">
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+        <span class="post-meta-divider">|</span>
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
+        </span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'data-structure/5.数据结构--双端链表/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
