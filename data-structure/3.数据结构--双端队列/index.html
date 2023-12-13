@@ -18,16 +18,16 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="alternate" type="application/rss+xml" title="寂林的小�??" href="https://jilinjl.github.io/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="寂林的小�??" href="https://jilinjl.github.io/atom.xml" />
-<link rel="alternate" type="application/json" title="寂林的小�??" href="https://jilinjl.github.io/feed.json" />
+<link rel="alternate" type="application/rss+xml" title="さびリンのへや" href="https://jilinjl.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="さびリンのへや" href="https://jilinjl.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="さびリンのへや" href="https://jilinjl.github.io/feed.json" />
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="JS,data-structure" />
+  <meta name="keywords" content="data-structure,JS" />
 
 
 <link rel="canonical" href="https://jilinjl.github.io/data-structure/3.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97/">
@@ -36,7 +36,7 @@
 
   <title>
 JS数据结构-双端队列 - 数据结构 |
-Welcome = 寂林的小�?? = JiLin's Cave</title>
+さびリン = さびリンのへや = JiLin's Cave</title>
 <meta name="generator" content="Hexo 5.4.2"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -104,7 +104,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Welcome</a></li>
+      <li class="item title"><a href="/" rel="start">さびリン</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -120,12 +120,12 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?547167"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?221272"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?842810"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?638465"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?499860"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?406155"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?379277"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?919655"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?990267"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?74974"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?611846"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?819521"></li>
         </ul>
       </div>
     </header>
@@ -161,11 +161,11 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
     <meta itemprop="name" content="寂林">
-    <meta itemprop="description" content="JiLin's Cave, 飒飒西风满院�??,蕊寒香冷蝶难�??">
+    <meta itemprop="description" content="JiLin's Cave, 自分の仕事,IT,软件开发">
   </span>
 
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="寂林的小�??">
+    <meta itemprop="name" content="さびリンのへや">
   </span>
 
 
@@ -218,8 +218,8 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 回文字符串判定</span></span><br><span class="line"><span class="keyword">const</span> palindrome = <span class="keyword">function</span>(<span class="params">str</span>)&#123;</span><br><span class="line">  <span class="keyword">let</span> deq = <span class="keyword">new</span> <span class="title class_">Deque</span>()</span><br><span class="line">  str = str.<span class="title function_">toLowerCase</span>()   <span class="comment">// 都转为小写(根据判定需求决定是否需要)</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">of</span> str)&#123;    <span class="comment">// for..of 循环字符串</span></span><br><span class="line">    deq.<span class="title function_">addBack</span>(i)      <span class="comment">//  全部加入队列中</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">while</span>(deq.<span class="property">size</span>&gt;<span class="number">1</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(deq.<span class="title function_">removeFront</span>()!=deq.<span class="title function_">removeBack</span>())&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">palindrome</span>(<span class="string">&#x27;abandon&#x27;</span>))   <span class="comment">// false</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">palindrome</span>(<span class="string">&#x27;adfgfda&#x27;</span>))        <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">palindrome</span>(<span class="string">&#x27;ABccFFddFFccBa&#x27;</span>)) <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">palindrome</span>(<span class="string">&#x27;厂水来自上海的海上自来水厂&#x27;</span>))  <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 
       <div class="tags">
-          <a href="/tags/JS/" rel="tag"><i class="ic i-tag"></i> JS</a>
           <a href="/tags/data-structure/" rel="tag"><i class="ic i-tag"></i> data-structure</a>
+          <a href="/tags/JS/" rel="tag"><i class="ic i-tag"></i> JS</a>
       </div>
   </div>
 
@@ -266,7 +266,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
 <div id="copyright">
 <ul>
   <li class="author">
-    <strong>本文作者： </strong>jilin <i class="ic i-at"><em>@</em></i>寂林的小�??
+    <strong>本文作者： </strong>jilin <i class="ic i-at"><em>@</em></i>さびリンのへや
   </li>
   <li class="link">
     <strong>本文链接：</strong>
@@ -287,7 +287,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
     <div class="item left">
       
 
-  <a href="/data-structure/2.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%98%9F%E5%88%97/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?236440" title="JS数据结构-队列">
+  <a href="/data-structure/2.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%98%9F%E5%88%97/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?780494" title="JS数据结构-队列">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 数据结构</span>
   <h3>JS数据结构-队列</h3>
@@ -297,7 +297,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
     <div class="item right">
       
 
-  <a href="/data-structure/4.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/" itemprop="url" rel="next" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?259995" title="JS数据结构-链表">
+  <a href="/data-structure/4.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/" itemprop="url" rel="next" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?350580" title="JS数据结构-链表">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 数据结构</span>
   <h3>JS数据结构-链表</h3>
@@ -331,7 +331,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <img class="image" itemprop="image" alt="寂林"
       data-src="/images/avatar.jpg">
   <p class="name" itemprop="name">寂林</p>
-  <div class="description" itemprop="description">飒飒西风满院�??,蕊寒香冷蝶难�??</div>
+  <div class="description" itemprop="description">自分の仕事,IT,软件开发</div>
 </div>
 
 <nav class="state">
@@ -357,7 +357,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
 
 <div class="social">
       <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbGluSkw=" title="https:&#x2F;&#x2F;github.com&#x2F;jilinJL"><i class="ic i-github"></i></span>
-      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaS1saW4tamw=" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;ji-lin-jl"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS93emk4MzYyNjQ2NA==" title="https:&#x2F;&#x2F;twitter.com&#x2F;wzi83626464"><i class="ic i-twitter"></i></span>
       <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQwOTkyMTIzOQ==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;409921239"><i class="ic i-cloud-music"></i></span>
       <span class="exturl item email" data-url="bWFpbHRvOndvc2hpamlsaW5AZm94bWFpbC5jb20=" title="mailto:woshijilin@foxmail.com"><i class="ic i-envelope"></i></span>
 </div>
@@ -441,40 +441,10 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/data-structure/" title="分类于 数据结构">数据结构</a>
+<a href="/categories/react/" title="分类于 React">React</a>
 </div>
 
-    <span><a href="/data-structure/1.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%88/" title="JS数据结构-栈">JS数据结构-栈</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
-</div>
-
-    <span><a href="/javaweb/%E9%A5%BF%E4%BA%86%E4%B9%88%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0/" title="饿了么项目接口实现_更新ing">饿了么项目接口实现_更新ing</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/courses/" title="分类于 课程">课程</a>
-</div>
-
-    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/" title="软件项目管理">软件项目管理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/something/" title="分类于 something">something</a>
-</div>
-
-    <span><a href="/something/i/" title="I">I</a></span>
+    <span><a href="/react/React/" title="React基础">React基础</a></span>
   </li>
 
       
@@ -491,42 +461,12 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/courses/" title="分类于 课程">课程</a>
-</div>
-
-    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" title="软件体系结构">软件体系结构</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/data-structure/" title="分类于 数据结构">数据结构</a>
-</div>
-
-    <span><a href="/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/" title="JS数据结构-集合">JS数据结构-集合</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E4%BF%AE%E8%80%83/" title="分类于 修考">修考</a>
-</div>
-
-    <span><a href="/master-test/%E5%BE%AE%E7%A7%AF%E5%88%86/" title="数学">数学</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
 </div>
 
-    <span><a href="/js/js-basic/The%20Super%20Tiny%20Complier/" title="迷你编译器">迷你编译器</a></span>
+    <span><a href="/js/js-basic/JS%E5%9F%BA%E7%A1%80/" title="JS基础啦">JS基础啦</a></span>
   </li>
 
       
@@ -536,7 +476,68 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
 <a href="/categories/something/" title="分类于 something">something</a>
 </div>
 
-    <span><a href="/something/%E4%BA%91%E5%BE%99%E7%A7%91%E6%8A%80/" title="实习第一天">实习第一天</a></span>
+    <span><a href="/something/jp/" title="实习结束">实习结束</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
+</div>
+
+    <span><a href="/html-css/3.HTML%E5%9F%BA%E7%A1%80/" title="HTML基础">HTML基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/%E6%B5%85%E8%AF%95%E4%B8%80%E4%B8%8BES6/" title="分类于 浅试一下ES6+">浅试一下ES6+</a>
+</div>
+
+    <span><a href="/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/" title="ES6">ES6</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/data-structure/" title="分类于 数据结构">数据结构</a>
+</div>
+
+    <span><a href="/data-structure/1.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%88/" title="JS数据结构-栈">JS数据结构-栈</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/master-test/" title="分类于 修考">修考</a>
+</div>
+
+    <span><a href="/master-test/%E8%AE%A1%E7%BB%84/" title="计组">计组</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/html-css/" title="分类于 HTML+CSS">HTML+CSS</a>
+</div>
+
+    <span><a href="/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/" title="HTML-梦开始的地方">HTML-梦开始的地方</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/demo/" title="demo">demo</a></span>
   </li>
 
   </ul>
@@ -555,7 +556,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
     <span class="with-love">
       <i class="ic i-Jilin"></i>
     </span>
-    <span class="author" itemprop="copyrightHolder">寂林 @ Welcome</span>
+    <span class="author" itemprop="copyrightHolder">寂林 @ さびリン</span>
   </div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

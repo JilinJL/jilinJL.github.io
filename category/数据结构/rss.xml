@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>寂林的小�?? • Posts by &#34;数据结构&#34; category</title>
+        <title>さびリンのへや • Posts by &#34;数据结构&#34; category</title>
         <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院�??,蕊寒香冷蝶难�??</description>
+        <description>自分の仕事,IT,软件开发</description>
         <language>zh-CN</language>
         <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
         <lastBuildDate>Fri, 12 May 2023 10:05:15 +0800</lastBuildDate>
         <category>hello hexo!</category>
         <category>course</category>
-        <category>html</category>
-        <category>css</category>
-        <category>TS</category>
+        <category>data-structure</category>
         <category>JS</category>
         <category>java</category>
         <category>javaweb</category>
+        <category>html</category>
+        <category>css</category>
+        <category>master</category>
         <category>tips</category>
-        <category>life</category>
         <category>work</category>
-        <category>data-structure</category>
+        <category>life</category>
+        <category>TS</category>
         <category>es6</category>
         <category>js</category>
-        <category>master</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/8.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/</guid>
             <title>JS数据结构-二叉搜索树</title>
             <link>https://jilinjl.github.io/data-structure/8.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;二叉搜索树&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二叉搜索树&#34;&gt;#&lt;/a&gt; 二叉搜索树&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;二叉树定义&lt;/strong&gt;&lt;/p&gt;
@@ -173,8 +173,8 @@
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/7.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%AD%97%E5%85%B8/</guid>
             <title>JS数据结构-字典</title>
             <link>https://jilinjl.github.io/data-structure/7.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%AD%97%E5%85%B8/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;字典&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字典&#34;&gt;#&lt;/a&gt; 字典&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -197,8 +197,8 @@
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/</guid>
             <title>JS数据结构-集合</title>
             <link>https://jilinjl.github.io/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;集合&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#集合&#34;&gt;#&lt;/a&gt; 集合&lt;/h2&gt;
 &lt;p&gt;❑ add (element)：向集合添加一个新元素。&lt;br&gt;
@@ -214,8 +214,8 @@
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/5.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%93%BE%E8%A1%A8/</guid>
             <title>JS数据结构-双向链表</title>
             <link>https://jilinjl.github.io/data-structure/5.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%93%BE%E8%A1%A8/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;双向链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#双向链表&#34;&gt;#&lt;/a&gt; 双向链表&lt;/h2&gt;
 &lt;p&gt;😫太麻烦了 next😁next😅next😐next😖再也不想写第二遍了&lt;/p&gt;
@@ -229,8 +229,8 @@
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/4.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/</guid>
             <title>JS数据结构-链表</title>
             <link>https://jilinjl.github.io/data-structure/4.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%93%BE%E8%A1%A8/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#链表&#34;&gt;#&lt;/a&gt; 链表&lt;/h2&gt;
 &lt;p&gt;❑ push (element)：向链表尾部添加一个新元素。&lt;br&gt;
@@ -251,8 +251,8 @@
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/3.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97/</guid>
             <title>JS数据结构-双端队列</title>
             <link>https://jilinjl.github.io/data-structure/3.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;双端队列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#双端队列&#34;&gt;#&lt;/a&gt; 双端队列&lt;/h2&gt;
 &lt;table&gt;
@@ -298,8 +298,8 @@
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/2.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%98%9F%E5%88%97/</guid>
             <title>JS数据结构-队列</title>
             <link>https://jilinjl.github.io/data-structure/2.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%98%9F%E5%88%97/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;队列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#队列&#34;&gt;#&lt;/a&gt; 队列&lt;/h2&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 不用数组是因为数组删除第一个元素,后面所有元素都会前移,效率很低&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Queue&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;// 一个对象来存储数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  items = &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;// 记录队头元素的指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  head = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;// 记录队尾元素的指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  last = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;enqueue&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;item&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;[&lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;last&lt;/span&gt;]=item&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;last&lt;/span&gt;++&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;dequeue&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;    &lt;span class=&#34;comment&#34;&gt;//判断队列为空则无法出队&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(&lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;isEmpty&lt;/span&gt;())&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; res = &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;[&lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;head&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;delete&lt;/span&gt; &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;[&lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;head&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;head&lt;/span&gt;++&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; res&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;size&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;last&lt;/span&gt; - &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;head&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;isEmpty&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;size&lt;/span&gt;()===&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -311,8 +311,8 @@
             <guid isPermalink="true">https://jilinjl.github.io/data-structure/1.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%88/</guid>
             <title>JS数据结构-栈</title>
             <link>https://jilinjl.github.io/data-structure/1.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E6%A0%88/</link>
-            <category>JS</category>
             <category>data-structure</category>
+            <category>JS</category>
             <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;栈&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#栈&#34;&gt;#&lt;/a&gt; 栈&lt;/h2&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 栈结构 有pop push top size isEmpty方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Stack&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  items = []&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;pop&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;pop&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;push&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;x&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;push&lt;/span&gt;(x)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;top&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable language_&#34;&gt;console&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;log&lt;/span&gt;(&lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;at&lt;/span&gt;(-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;))	&lt;span class=&#34;comment&#34;&gt;// 也可以是 console.log(this.items[this.items.length-1])&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;size&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;length&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;title function_&#34;&gt;isEmpty&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;items&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;length&lt;/span&gt; === &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

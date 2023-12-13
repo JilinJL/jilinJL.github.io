@@ -18,16 +18,16 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="alternate" type="application/rss+xml" title="寂林的小�??" href="https://jilinjl.github.io/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="寂林的小�??" href="https://jilinjl.github.io/atom.xml" />
-<link rel="alternate" type="application/json" title="寂林的小�??" href="https://jilinjl.github.io/feed.json" />
+<link rel="alternate" type="application/rss+xml" title="さびリンのへや" href="https://jilinjl.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="さびリンのへや" href="https://jilinjl.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="さびリンのへや" href="https://jilinjl.github.io/feed.json" />
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="JS,data-structure" />
+  <meta name="keywords" content="data-structure,JS" />
 
 
 <link rel="canonical" href="https://jilinjl.github.io/data-structure/7.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%AD%97%E5%85%B8/">
@@ -36,7 +36,7 @@
 
   <title>
 JS数据结构-字典 - 数据结构 |
-Welcome = 寂林的小�?? = JiLin's Cave</title>
+さびリン = さびリンのへや = JiLin's Cave</title>
 <meta name="generator" content="Hexo 5.4.2"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -104,7 +104,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Welcome</a></li>
+      <li class="item title"><a href="/" rel="start">さびリン</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -120,12 +120,12 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?714284"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?469636"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?536350"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?623726"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?496820"></li>
-          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?406332"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?275488"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?407794"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?623678"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?454862"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?911366"></li>
+          <li class="item" data-background-image="http://imgapi.xl0408.top/index.php?946419"></li>
         </ul>
       </div>
     </header>
@@ -161,11 +161,11 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
     <meta itemprop="name" content="寂林">
-    <meta itemprop="description" content="JiLin's Cave, 飒飒西风满院�??,蕊寒香冷蝶难�??">
+    <meta itemprop="description" content="JiLin's Cave, 自分の仕事,IT,软件开发">
   </span>
 
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="寂林的小�??">
+    <meta itemprop="name" content="さびリンのへや">
   </span>
 
 
@@ -195,8 +195,8 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> myToString = <span class="keyword">function</span> (<span class="params">item</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (item === <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;NULL&quot;</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (item === <span class="literal">undefined</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;UNDEFINED&quot;</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">typeof</span> item === <span class="string">&quot;string&quot;</span> || item <span class="keyword">instanceof</span> <span class="title class_">String</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;item&#125;</span>`</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> item.<span class="title function_">toString</span>();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ValuePair</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">key, value</span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">key</span> = key;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">value</span> = value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">toString</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">`[#<span class="subst">$&#123;<span class="variable language_">this</span>.key&#125;</span>: <span class="subst">$&#123;<span class="variable language_">this</span>.value&#125;</span>]`</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">myMap</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">toStr = myToString</span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">toStr</span> = toStr;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">table</span> = [];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">hasKey</span>(<span class="params">key</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">table</span>[<span class="variable language_">this</span>.<span class="title function_">toStr</span>(key)] != <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">set</span>(<span class="params">key, value</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (key != <span class="literal">null</span> &amp;&amp; value != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">const</span> tableKey = <span class="variable language_">this</span>.<span class="title function_">toStr</span>(key); <span class="comment">// &#123;1&#125;</span></span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">table</span>[tableKey] = <span class="keyword">new</span> <span class="title class_">ValuePair</span>(key, value); <span class="comment">// &#123;2&#125;</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">get</span>(<span class="params">key</span>) &#123;</span><br><span class="line">        <span class="keyword">const</span> valuePair = <span class="variable language_">this</span>.<span class="property">table</span>[<span class="variable language_">this</span>.<span class="title function_">toStr</span>(key)]; <span class="comment">// &#123;1&#125;</span></span><br><span class="line">        <span class="keyword">return</span> valuePair == <span class="literal">null</span> ? <span class="literal">undefined</span> : valuePair.<span class="property">value</span>; <span class="comment">// &#123;2&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">remove</span>(<span class="params">key</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="title function_">hasKey</span>(key)) &#123;</span><br><span class="line">            <span class="keyword">delete</span> <span class="variable language_">this</span>.<span class="property">table</span>[<span class="variable language_">this</span>.<span class="title function_">toStr</span>(key)];</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">keyValues</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="title class_">Object</span>.<span class="title function_">values</span>(<span class="variable language_">this</span>.<span class="property">table</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">keys</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">keyValues</span>().<span class="title function_">map</span>(<span class="function">(<span class="params">valuePair</span>) =&gt;</span> valuePair.<span class="property">key</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">values</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">keyValues</span>().<span class="title function_">map</span>(<span class="function">(<span class="params">valuePair</span>) =&gt;</span> valuePair.<span class="property">value</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">forEach</span>(<span class="params">callbackFn</span>) &#123;</span><br><span class="line">        <span class="keyword">const</span> valuePairs = <span class="variable language_">this</span>.<span class="title function_">keyValues</span>(); <span class="comment">// &#123;1&#125;</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; valuePairs.<span class="property">length</span>; i++) &#123;</span><br><span class="line">            <span class="comment">// &#123;2&#125;</span></span><br><span class="line">            <span class="keyword">const</span> result = <span class="title function_">callbackFn</span>(valuePairs[i].<span class="property">key</span>, valuePairs[i].<span class="property">value</span>); <span class="comment">// &#123;3&#125;</span></span><br><span class="line">            <span class="keyword">if</span> (result === <span class="literal">false</span>) &#123;</span><br><span class="line">                <span class="keyword">break</span>; <span class="comment">// &#123;4&#125;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">size</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="title class_">Object</span>.<span class="title function_">keys</span>(<span class="variable language_">this</span>.<span class="property">table</span>).<span class="property">length</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">isEmpty</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="title function_">size</span>() === <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">clear</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">table</span> = &#123;&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">toString</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="variable language_">this</span>.<span class="title function_">isEmpty</span>()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">const</span> valuePairs = <span class="variable language_">this</span>.<span class="title function_">keyValues</span>();</span><br><span class="line">        <span class="keyword">let</span> objString = <span class="string">`<span class="subst">$&#123;valuePairs[<span class="number">0</span>].toString()&#125;</span>`</span>; <span class="comment">// &#123;1&#125;</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; valuePairs.<span class="property">length</span>; i++) &#123;</span><br><span class="line">            objString = <span class="string">`<span class="subst">$&#123;objString&#125;</span>, <span class="subst">$&#123;valuePairs[i].toString()&#125;</span>`</span>; <span class="comment">// &#123;2&#125;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> objString; <span class="comment">// &#123;3&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       <div class="tags">
-          <a href="/tags/JS/" rel="tag"><i class="ic i-tag"></i> JS</a>
           <a href="/tags/data-structure/" rel="tag"><i class="ic i-tag"></i> data-structure</a>
+          <a href="/tags/JS/" rel="tag"><i class="ic i-tag"></i> JS</a>
       </div>
   </div>
 
@@ -243,7 +243,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
 <div id="copyright">
 <ul>
   <li class="author">
-    <strong>本文作者： </strong>jilin <i class="ic i-at"><em>@</em></i>寂林的小�??
+    <strong>本文作者： </strong>jilin <i class="ic i-at"><em>@</em></i>さびリンのへや
   </li>
   <li class="link">
     <strong>本文链接：</strong>
@@ -264,7 +264,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
     <div class="item left">
       
 
-  <a href="/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?332605" title="JS数据结构-集合">
+  <a href="/data-structure/6.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E9%9B%86%E5%90%88/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?524590" title="JS数据结构-集合">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 数据结构</span>
   <h3>JS数据结构-集合</h3>
@@ -274,7 +274,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
     <div class="item right">
       
 
-  <a href="/data-structure/8.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" itemprop="url" rel="next" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?624109" title="JS数据结构-二叉搜索树">
+  <a href="/data-structure/8.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" itemprop="url" rel="next" data-background-image="http:&#x2F;&#x2F;imgapi.xl0408.top&#x2F;index.php?601176" title="JS数据结构-二叉搜索树">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 数据结构</span>
   <h3>JS数据结构-二叉搜索树</h3>
@@ -308,7 +308,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <img class="image" itemprop="image" alt="寂林"
       data-src="/images/avatar.jpg">
   <p class="name" itemprop="name">寂林</p>
-  <div class="description" itemprop="description">飒飒西风满院�??,蕊寒香冷蝶难�??</div>
+  <div class="description" itemprop="description">自分の仕事,IT,软件开发</div>
 </div>
 
 <nav class="state">
@@ -334,7 +334,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
 
 <div class="social">
       <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ppbGluSkw=" title="https:&#x2F;&#x2F;github.com&#x2F;jilinJL"><i class="ic i-github"></i></span>
-      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaS1saW4tamw=" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;ji-lin-jl"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS93emk4MzYyNjQ2NA==" title="https:&#x2F;&#x2F;twitter.com&#x2F;wzi83626464"><i class="ic i-twitter"></i></span>
       <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQwOTkyMTIzOQ==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;409921239"><i class="ic i-cloud-music"></i></span>
       <span class="exturl item email" data-url="bWFpbHRvOndvc2hpamlsaW5AZm94bWFpbC5jb20=" title="mailto:woshijilin@foxmail.com"><i class="ic i-envelope"></i></span>
 </div>
@@ -418,22 +418,32 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
+<a href="/categories/master-test/" title="分类于 修考">修考</a>
 </div>
 
-    <span><a href="/js/js-basic/JS%E5%9F%BA%E7%A1%80/" title="JS基础啦">JS基础啦</a></span>
+    <span><a href="/master-test/%E8%AE%A1%E7%BB%84/" title="计组">计组</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/data-structure/" title="分类于 数据结构">数据结构</a>
+<a href="/categories/something/" title="分类于 something">something</a>
 </div>
 
-    <span><a href="/data-structure/3.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97/" title="JS数据结构-双端队列">JS数据结构-双端队列</a></span>
+    <span><a href="/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/" title="OBS虚拟摄像头">OBS虚拟摄像头</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
+</div>
+
+    <span><a href="/js/js-basic/The%20Super%20Tiny%20Complier/" title="迷你编译器">迷你编译器</a></span>
   </li>
 
       
@@ -460,42 +470,20 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/courses/" title="分类于 课程">课程</a>
+<a href="/categories/something/" title="分类于 something">something</a>
 </div>
 
-    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/" title="软件项目管理">软件项目管理</a></span>
+    <span><a href="/something/%E4%BA%91%E5%BE%99%E7%A7%91%E6%8A%80/" title="实习第一天">实习第一天</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/courses/" title="分类于 课程">课程</a>
+<a href="/categories/data-structure/" title="分类于 数据结构">数据结构</a>
 </div>
 
-    <span><a href="/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" title="软件体系结构">软件体系结构</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
-</div>
-
-    <span><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" title="Javaweb项目基础">Javaweb项目基础</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/js/js-basic/" title="分类于 JS基础">JS基础</a>
-</div>
-
-    <span><a href="/js/js-basic/JavaScript%20%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="JS面试知识点">JS面试知识点</a></span>
+    <span><a href="/data-structure/3.%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84--%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97/" title="JS数据结构-双端队列">JS数据结构-双端队列</a></span>
   </li>
 
       
@@ -514,10 +502,22 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/something/" title="分类于 something">something</a>
+<a href="/categories/js/" title="分类于 JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/js/%E6%B5%85%E8%AF%95%E4%B8%80%E4%B8%8BES6/" title="分类于 浅试一下ES6+">浅试一下ES6+</a>
 </div>
 
-    <span><a href="/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/" title="OBS虚拟摄像头">OBS虚拟摄像头</a></span>
+    <span><a href="/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/" title="ES6">ES6</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/javaweb/" title="分类于 JavaWeb">JavaWeb</a>
+</div>
+
+    <span><a href="/javaweb/Javaweb%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80/" title="Javaweb项目基础">Javaweb项目基础</a></span>
   </li>
 
   </ul>
@@ -536,7 +536,7 @@ Welcome = 寂林的小�?? = JiLin's Cave</title>
     <span class="with-love">
       <i class="ic i-Jilin"></i>
     </span>
-    <span class="author" itemprop="copyrightHolder">寂林 @ Welcome</span>
+    <span class="author" itemprop="copyrightHolder">寂林 @ さびリン</span>
   </div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

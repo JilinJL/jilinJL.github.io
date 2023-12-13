@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>寂林的小�?? • Posts by &#34;something&#34; category</title>
+        <title>さびリンのへや • Posts by &#34;something&#34; category</title>
         <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院�??,蕊寒香冷蝶难�??</description>
+        <description>自分の仕事,IT,软件开发</description>
         <language>zh-CN</language>
         <pubDate>Mon, 04 Sep 2023 18:53:19 +0800</pubDate>
         <lastBuildDate>Mon, 04 Sep 2023 18:53:19 +0800</lastBuildDate>
         <category>hello hexo!</category>
         <category>course</category>
-        <category>html</category>
-        <category>css</category>
-        <category>TS</category>
+        <category>data-structure</category>
         <category>JS</category>
         <category>java</category>
         <category>javaweb</category>
+        <category>html</category>
+        <category>css</category>
+        <category>master</category>
         <category>tips</category>
-        <category>life</category>
         <category>work</category>
-        <category>data-structure</category>
+        <category>life</category>
+        <category>TS</category>
         <category>es6</category>
         <category>js</category>
-        <category>master</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/something/jp/</guid>
             <title>实习结束</title>

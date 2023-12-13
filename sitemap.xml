@@ -349,21 +349,7 @@
   </url>
   
   <url>
-    <loc>https://jilinjl.github.io/tags/html/</loc>
-    <lastmod>2023-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jilinjl.github.io/tags/css/</loc>
-    <lastmod>2023-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jilinjl.github.io/tags/TS/</loc>
+    <loc>https://jilinjl.github.io/tags/data-structure/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -391,14 +377,28 @@
   </url>
   
   <url>
-    <loc>https://jilinjl.github.io/tags/tips/</loc>
+    <loc>https://jilinjl.github.io/tags/html/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jilinjl.github.io/tags/life/</loc>
+    <loc>https://jilinjl.github.io/tags/css/</loc>
+    <lastmod>2023-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jilinjl.github.io/tags/master/</loc>
+    <lastmod>2023-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jilinjl.github.io/tags/tips/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -412,7 +412,14 @@
   </url>
   
   <url>
-    <loc>https://jilinjl.github.io/tags/data-structure/</loc>
+    <loc>https://jilinjl.github.io/tags/life/</loc>
+    <lastmod>2023-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jilinjl.github.io/tags/TS/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -432,45 +439,10 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://jilinjl.github.io/tags/master/</loc>
-    <lastmod>2023-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
     <loc>https://jilinjl.github.io/categories/courses/</loc>
-    <lastmod>2023-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jilinjl.github.io/categories/html-css/</loc>
-    <lastmod>2023-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jilinjl.github.io/categories/react/</loc>
-    <lastmod>2023-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jilinjl.github.io/categories/javaweb/</loc>
-    <lastmod>2023-12-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jilinjl.github.io/categories/something/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -484,14 +456,42 @@
   </url>
   
   <url>
-    <loc>https://jilinjl.github.io/categories/js/</loc>
+    <loc>https://jilinjl.github.io/categories/javaweb/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jilinjl.github.io/categories/js/es6/</loc>
+    <loc>https://jilinjl.github.io/categories/html-css/</loc>
+    <lastmod>2023-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jilinjl.github.io/categories/master-test/</loc>
+    <lastmod>2023-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jilinjl.github.io/categories/something/</loc>
+    <lastmod>2023-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jilinjl.github.io/categories/react/</loc>
+    <lastmod>2023-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jilinjl.github.io/categories/js/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -512,7 +512,7 @@
   </url>
   
   <url>
-    <loc>https://jilinjl.github.io/categories/%E4%BF%AE%E8%80%83/</loc>
+    <loc>https://jilinjl.github.io/categories/js/%E6%B5%85%E8%AF%95%E4%B8%80%E4%B8%8BES6/</loc>
     <lastmod>2023-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
