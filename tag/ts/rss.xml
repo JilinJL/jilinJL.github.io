@@ -5,28 +5,28 @@
         <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 03 Feb 2023 14:44:43 +0800</pubDate>
-        <lastBuildDate>Fri, 03 Feb 2023 14:44:43 +0800</lastBuildDate>
+        <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
+        <lastBuildDate>Fri, 12 May 2023 10:05:15 +0800</lastBuildDate>
         <category>hello hexo!</category>
+        <category>course</category>
         <category>html</category>
         <category>css</category>
-        <category>course</category>
+        <category>TS</category>
+        <category>JS</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>life</category>
         <category>tips</category>
+        <category>life</category>
+        <category>work</category>
+        <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
-        <category>JS</category>
-        <category>TS</category>
-        <category>data-structure</category>
-        <category>work</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/react/TypeScript/</guid>
             <title>TypeScript基础</title>
             <link>https://jilinjl.github.io/react/TypeScript/</link>
             <category>TS</category>
-            <pubDate>Fri, 03 Feb 2023 14:44:43 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;typescript基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#typescript基础&#34;&gt;#&lt;/a&gt; TypeScript 基础&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;TS是JS的超集，最主要的变化就是引入了Type，对每个变量可以声明类型，类似于其他面向对象语言（java，C#）。&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;安装配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装配置&#34;&gt;#&lt;/a&gt; 安装配置&lt;/h2&gt;

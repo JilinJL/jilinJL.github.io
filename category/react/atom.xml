@@ -3,21 +3,21 @@
     <id>https://jilinJL.github.io</id>
     <title>寂林的小窝 • Posts by &#34;react&#34; category</title>
     <link href="https://jilinJL.github.io" />
-    <updated>2023-02-03T06:44:43.886Z</updated>
+    <updated>2023-05-12T02:05:15.721Z</updated>
     <category term="hello hexo!" />
+    <category term="course" />
     <category term="html" />
     <category term="css" />
-    <category term="course" />
+    <category term="TS" />
+    <category term="JS" />
     <category term="java" />
     <category term="javaweb" />
-    <category term="life" />
     <category term="tips" />
+    <category term="life" />
+    <category term="work" />
+    <category term="data-structure" />
     <category term="es6" />
     <category term="js" />
-    <category term="JS" />
-    <category term="TS" />
-    <category term="data-structure" />
-    <category term="work" />
     <entry>
         <id>https://jilinjl.github.io/react/TypeScript/</id>
         <title>TypeScript基础</title>
@@ -161,7 +161,7 @@
 &lt;p&gt;这样就完成了在 webpack 项目中添加 Babel 转换 ES6 + 代码的功能。在 webpack 打包的过程中，会将源代码经由 &lt;code&gt;babel-loader&lt;/code&gt;  处理转换为目标代码，这一执行过程对我们来只说是打包时 “顺势而为” 的，我们再也不用关心 Babel 本身的命令细节了。&lt;/p&gt;
 </content>
         <category term="TS" />
-        <updated>2023-02-03T06:44:43.886Z</updated>
+        <updated>2023-05-12T02:05:15.721Z</updated>
     </entry>
     <entry>
         <id>https://jilinjl.github.io/react/React/</id>
@@ -358,6 +358,6 @@ speak () 方法是放在&lt;strong&gt;原型对象&lt;/strong&gt;里的&lt;br&gt
 &lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202302061446624.png&#34; alt=&#34;新版&#34; style=&#34;zoom: 80%;&#34; /&gt;
 </content>
         <category term="JS" />
-        <updated>2022-04-30T08:00:35.233Z</updated>
+        <updated>2023-05-12T02:05:15.719Z</updated>
     </entry>
 </feed>

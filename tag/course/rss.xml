@@ -5,48 +5,28 @@
         <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 06 Dec 2022 10:59:50 +0800</pubDate>
-        <lastBuildDate>Tue, 06 Dec 2022 10:59:50 +0800</lastBuildDate>
+        <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
+        <lastBuildDate>Fri, 12 May 2023 10:05:15 +0800</lastBuildDate>
         <category>hello hexo!</category>
+        <category>course</category>
         <category>html</category>
         <category>css</category>
-        <category>course</category>
+        <category>TS</category>
+        <category>JS</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>life</category>
         <category>tips</category>
+        <category>life</category>
+        <category>work</category>
+        <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
-        <category>JS</category>
-        <category>TS</category>
-        <category>data-structure</category>
-        <category>work</category>
-        <item>
-            <guid isPermalink="true">https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</guid>
-            <title>软件体系结构</title>
-            <link>https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</link>
-            <category>course</category>
-            <pubDate>Tue, 06 Dec 2022 10:59:50 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&#34;软件体系结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#软件体系结构&#34;&gt;#&lt;/a&gt; 软件体系结构&lt;/h1&gt;
-&lt;h2 id=&#34;1概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1概念&#34;&gt;#&lt;/a&gt; 1. 概念&lt;/h2&gt;
-&lt;h3 id=&#34;共性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#共性&#34;&gt;#&lt;/a&gt; 共性&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;构件&lt;/li&gt;
-&lt;li&gt;连接件&lt;/li&gt;
-&lt;li&gt;物理分布&lt;/li&gt;
-&lt;li&gt;约束&lt;/li&gt;
-&lt;li&gt;性能&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;为什么需要软件体系结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么需要软件体系结构&#34;&gt;#&lt;/a&gt; 为什么需要软件体系结构&lt;/h3&gt;
- ]]></description>
-        </item>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/</guid>
             <title>软件项目管理</title>
             <link>https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/</link>
             <category>course</category>
-            <pubDate>Tue, 06 Dec 2022 10:19:03 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;软件项目管理大纲&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#软件项目管理大纲&#34;&gt;#&lt;/a&gt; 软件项目管理大纲&lt;/h1&gt;
 &lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202211161009610.png&#34; alt=&#34;Rat&#34; style=&#34;zoom: 15%;&#34; /&gt;
 &lt;h3 id=&#34;1项目和项目管理的基本概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1项目和项目管理的基本概念&#34;&gt;#&lt;/a&gt; 1. 项目和项目管理的基本概念&lt;/h3&gt;
@@ -222,6 +202,26 @@
 &lt;p&gt;有了上面的分析，这道考题的答案也就很清晰了。&lt;/p&gt;
 &lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202211161033148.png&#34; alt=&#34;image-20221116103343082&#34; style=&#34;zoom:150%;&#34; /&gt;
 &lt;p&gt;&lt;a href=&#34;#3.WBS&#34;&gt;👆回到范围管理&lt;/a&gt;（按住 Ctrl 点击） &lt;a href=&#34;#3.WBS&#34;&gt;👆回到范围管理&lt;/a&gt;（按住 Ctrl 点击） &lt;a href=&#34;#3.WBS&#34;&gt;👆回到范围管理&lt;/a&gt;（按住 Ctrl 点击）&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</guid>
+            <title>软件体系结构</title>
+            <link>https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</link>
+            <category>course</category>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&#34;软件体系结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#软件体系结构&#34;&gt;#&lt;/a&gt; 软件体系结构&lt;/h1&gt;
+&lt;h2 id=&#34;1概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1概念&#34;&gt;#&lt;/a&gt; 1. 概念&lt;/h2&gt;
+&lt;h3 id=&#34;共性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#共性&#34;&gt;#&lt;/a&gt; 共性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;构件&lt;/li&gt;
+&lt;li&gt;连接件&lt;/li&gt;
+&lt;li&gt;物理分布&lt;/li&gt;
+&lt;li&gt;约束&lt;/li&gt;
+&lt;li&gt;性能&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;为什么需要软件体系结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么需要软件体系结构&#34;&gt;#&lt;/a&gt; 为什么需要软件体系结构&lt;/h3&gt;
  ]]></description>
         </item>
     </channel>

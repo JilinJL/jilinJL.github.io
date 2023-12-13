@@ -5,28 +5,28 @@
         <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 05 Jan 2023 19:27:00 +0800</pubDate>
-        <lastBuildDate>Thu, 05 Jan 2023 19:27:00 +0800</lastBuildDate>
+        <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
+        <lastBuildDate>Fri, 12 May 2023 10:05:15 +0800</lastBuildDate>
         <category>hello hexo!</category>
+        <category>course</category>
         <category>html</category>
         <category>css</category>
-        <category>course</category>
+        <category>TS</category>
+        <category>JS</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>life</category>
         <category>tips</category>
+        <category>life</category>
+        <category>work</category>
+        <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
-        <category>JS</category>
-        <category>TS</category>
-        <category>data-structure</category>
-        <category>work</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/html-css/3.HTML%E5%9F%BA%E7%A1%80/</guid>
             <title>HTML基础</title>
             <link>https://jilinjl.github.io/html-css/3.HTML%E5%9F%BA%E7%A1%80/</link>
             <category>html</category>
-            <pubDate>Thu, 05 Jan 2023 19:27:00 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;百度前端一html&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#百度前端一html&#34;&gt;#&lt;/a&gt; 百度前端（一）HTML&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202301051943420.png&#34; alt=&#34;image-20230105194310379&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;html语法规范&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#html语法规范&#34;&gt;#&lt;/a&gt; HTML 语法规范&lt;/h2&gt;
@@ -106,7 +106,7 @@ d. 下载链接：href=“一个压缩包或文件的地址” 则会下载这�
             <title>CSS的布局知识</title>
             <link>https://jilinjl.github.io/html-css/2.%E5%86%8D%E4%BC%9ACSS%E5%B8%83%E5%B1%80/</link>
             <category>css</category>
-            <pubDate>Fri, 18 Nov 2022 09:03:02 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;css布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css布局&#34;&gt;#&lt;/a&gt; &lt;strong&gt;CSS 布局&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202211180906847.png&#34; alt=&#34;页面布局&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;流式布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#流式布局&#34;&gt;#&lt;/a&gt; 流式布局&lt;/h2&gt;
@@ -280,7 +280,7 @@ d. 下载链接：href=“一个压缩包或文件的地址” 则会下载这�
             <title>HTML-梦开始的地方</title>
             <link>https://jilinjl.github.io/html-css/1.HTML%E7%9A%84%E5%8F%A6%E4%B8%80%E9%9D%A2/</link>
             <category>html</category>
-            <pubDate>Fri, 18 Nov 2022 09:03:02 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;1关于表单验证&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1关于表单验证&#34;&gt;#&lt;/a&gt; 1. 关于表单验证&lt;/h3&gt;
 &lt;p&gt;1、required 设置表单必填&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/jilinJL/my-pictures/raw/master/img/202211180909420.png&#34; alt=&#34;image-20221110102046922&#34;&gt;&lt;/p&gt;

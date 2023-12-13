@@ -3,21 +3,37 @@
     <id>https://jilinJL.github.io</id>
     <title>寂林的小窝 • Posts by &#34;work&#34; tag</title>
     <link href="https://jilinJL.github.io" />
-    <updated>2023-03-28T14:00:15.872Z</updated>
+    <updated>2023-09-04T10:53:19.547Z</updated>
     <category term="hello hexo!" />
+    <category term="course" />
     <category term="html" />
     <category term="css" />
-    <category term="course" />
+    <category term="TS" />
+    <category term="JS" />
     <category term="java" />
     <category term="javaweb" />
-    <category term="life" />
     <category term="tips" />
+    <category term="life" />
+    <category term="work" />
+    <category term="data-structure" />
     <category term="es6" />
     <category term="js" />
-    <category term="JS" />
-    <category term="TS" />
-    <category term="data-structure" />
-    <category term="work" />
+    <entry>
+        <id>https://jilinjl.github.io/something/jp/</id>
+        <title>实习结束</title>
+        <link rel="alternate" href="https://jilinjl.github.io/something/jp/"/>
+        <content type="html">&lt;h5 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h5&gt;
+&lt;p&gt;&lt;mark&gt;在历史的长河里，我只是一刹那；在广袤的沙漠中，我只是一粒沙。&lt;/mark&gt;&lt;/p&gt;
+&lt;h2 id=&#34;实习结束&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实习结束&#34;&gt;#&lt;/a&gt; 实习结束&lt;/h2&gt;
+&lt;p&gt;8 月 24 号我找主管聊了一下，告诉他我打算离职了。25 号由技术经理，部门经理和项目经理一起找我谈话，我正式提交了离职申请。结束了从 23 年 3 月 28 日 - 23 年 8 月 25 日的实习工作。写这篇文章是在 9 月 4 日了，我离职后回到老家放松了一周，然后 9 月 2 号到学校开学报到。至于期间的细节和实习的收获，我无以言表。&lt;/p&gt;
+&lt;h2 id=&#34;关于未来&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于未来&#34;&gt;#&lt;/a&gt; 关于未来&lt;/h2&gt;
+&lt;p&gt;&lt;s&gt;我希望有一天我能身处异国他乡，亲自感受一下世界有多大，有多自由。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;我希望我能找到好工作，过上舒适的生活，吃我想吃的，买我想买的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这天傍晚，太阳是深红色的，被云层裹上了一圈外壳，像一个鸡蛋被打在天空中，太阳是蛋黄，云层是蛋白，这颗子弹是否能击穿将来？&lt;/strong&gt;&lt;/p&gt;
+</content>
+        <category term="work" />
+        <updated>2023-09-04T10:53:19.547Z</updated>
+    </entry>
     <entry>
         <id>https://jilinjl.github.io/something/%E4%BA%91%E5%BE%99%E7%A7%91%E6%8A%80/</id>
         <title>实习第一天</title>
@@ -36,10 +52,8 @@
 &lt;p&gt;​		关于设备，公司的电脑用起来是方便，不用关心配置上的失误造成不可弥补的错误，也可以很方便地连接内网。但是我还是决定以后带自己电脑，毕竟写代码顺手，定制化配置也是驾轻就熟了。&lt;/p&gt;
 &lt;p&gt;​	emmm… 回来之后暂时就记得这么多了，有兴趣我再补充吧。&lt;/p&gt;
 &lt;p&gt;​	对了，下班回来的时候，晚高峰，春熙路那边地铁是真的很 &lt;mark&gt;堵&lt;/mark&gt; 啊！！！人挤人，我是几乎擦着地铁门挤上去的。&lt;/p&gt;
-&lt;h3 id=&#34;竹叶青小程序项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#竹叶青小程序项目&#34;&gt;#&lt;/a&gt; [竹叶青小程序项目]&lt;/h3&gt;
-&lt;p&gt;​	使用阿里云对象存储&lt;/p&gt;
 </content>
         <category term="work" />
-        <updated>2023-03-28T14:00:15.872Z</updated>
+        <updated>2023-05-12T02:05:15.735Z</updated>
     </entry>
 </feed>

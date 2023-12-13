@@ -5,28 +5,44 @@
         <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 28 Mar 2023 22:00:15 +0800</pubDate>
-        <lastBuildDate>Tue, 28 Mar 2023 22:00:15 +0800</lastBuildDate>
+        <pubDate>Mon, 04 Sep 2023 18:53:19 +0800</pubDate>
+        <lastBuildDate>Mon, 04 Sep 2023 18:53:19 +0800</lastBuildDate>
         <category>hello hexo!</category>
+        <category>course</category>
         <category>html</category>
         <category>css</category>
-        <category>course</category>
+        <category>TS</category>
+        <category>JS</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>life</category>
         <category>tips</category>
+        <category>life</category>
+        <category>work</category>
+        <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
-        <category>JS</category>
-        <category>TS</category>
-        <category>data-structure</category>
-        <category>work</category>
+        <item>
+            <guid isPermalink="true">https://jilinjl.github.io/something/jp/</guid>
+            <title>实习结束</title>
+            <link>https://jilinjl.github.io/something/jp/</link>
+            <category>work</category>
+            <pubDate>Mon, 04 Sep 2023 18:53:19 +0800</pubDate>
+            <description><![CDATA[ &lt;h5 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h5&gt;
+&lt;p&gt;&lt;mark&gt;在历史的长河里，我只是一刹那；在广袤的沙漠中，我只是一粒沙。&lt;/mark&gt;&lt;/p&gt;
+&lt;h2 id=&#34;实习结束&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实习结束&#34;&gt;#&lt;/a&gt; 实习结束&lt;/h2&gt;
+&lt;p&gt;8 月 24 号我找主管聊了一下，告诉他我打算离职了。25 号由技术经理，部门经理和项目经理一起找我谈话，我正式提交了离职申请。结束了从 23 年 3 月 28 日 - 23 年 8 月 25 日的实习工作。写这篇文章是在 9 月 4 日了，我离职后回到老家放松了一周，然后 9 月 2 号到学校开学报到。至于期间的细节和实习的收获，我无以言表。&lt;/p&gt;
+&lt;h2 id=&#34;关于未来&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于未来&#34;&gt;#&lt;/a&gt; 关于未来&lt;/h2&gt;
+&lt;p&gt;&lt;s&gt;我希望有一天我能身处异国他乡，亲自感受一下世界有多大，有多自由。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;我希望我能找到好工作，过上舒适的生活，吃我想吃的，买我想买的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这天傍晚，太阳是深红色的，被云层裹上了一圈外壳，像一个鸡蛋被打在天空中，太阳是蛋黄，云层是蛋白，这颗子弹是否能击穿将来？&lt;/strong&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/something/%E4%BA%91%E5%BE%99%E7%A7%91%E6%8A%80/</guid>
             <title>实习第一天</title>
             <link>https://jilinjl.github.io/something/%E4%BA%91%E5%BE%99%E7%A7%91%E6%8A%80/</link>
             <category>work</category>
-            <pubDate>Tue, 28 Mar 2023 22:00:15 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;云徙科技&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#云徙科技&#34;&gt;#&lt;/a&gt; 云徙科技&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;徙 xi✔ | 徒 tu✖&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;​		早上六点半被闹钟叫醒，然后就起床开始洗漱收拾东西，因为学校到公司是要花一个多小时，所以计划七点半上地铁的话，到公司应该差不多八点四十。走之前确认了一下需要带的资料都带齐了，然后路过食堂吃了俩包子一个鸡蛋。我以前很少吃早饭，但现在开始应该每天都会吃了。&lt;/p&gt;
@@ -41,8 +57,6 @@
 &lt;p&gt;​		关于设备，公司的电脑用起来是方便，不用关心配置上的失误造成不可弥补的错误，也可以很方便地连接内网。但是我还是决定以后带自己电脑，毕竟写代码顺手，定制化配置也是驾轻就熟了。&lt;/p&gt;
 &lt;p&gt;​	emmm… 回来之后暂时就记得这么多了，有兴趣我再补充吧。&lt;/p&gt;
 &lt;p&gt;​	对了，下班回来的时候，晚高峰，春熙路那边地铁是真的很 &lt;mark&gt;堵&lt;/mark&gt; 啊！！！人挤人，我是几乎擦着地铁门挤上去的。&lt;/p&gt;
-&lt;h3 id=&#34;竹叶青小程序项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#竹叶青小程序项目&#34;&gt;#&lt;/a&gt; [竹叶青小程序项目]&lt;/h3&gt;
-&lt;p&gt;​	使用阿里云对象存储&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -50,7 +64,7 @@
             <title>OBS虚拟摄像头</title>
             <link>https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</link>
             <category>tips</category>
-            <pubDate>Fri, 16 Dec 2022 17:12:40 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;一-下载安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-下载安装&#34;&gt;#&lt;/a&gt; 一、下载安装&lt;/h2&gt;
 &lt;p&gt;下载方式有两种：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;官网下载&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9vYnNwcm9qZWN0LmNvbQ==&#34;&gt;https://obsproject.com&lt;/span&gt;&lt;/p&gt;
@@ -122,7 +136,7 @@
             <title>I</title>
             <link>https://jilinjl.github.io/something/i/</link>
             <category>life</category>
-            <pubDate>Fri, 18 Nov 2022 21:59:07 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;​		我们这一生，好像都在奋力追逐着某样东西，它有时候近在咫尺，有时候渺茫无期。&lt;br&gt;
 ​		我生来这个世界，是为了什么。我与同辈高谈阔论，看晚辈风华正茂，对长辈恭敬如宾。我的意识在控制着我，还是我在改变我的意识。自以为懂得很多，视他人如蜉蝣，可是我的尽头呢…… 如一望无垠，好像是充满机遇，可又有十足的踏空感。仿佛跌落云端，看尽朝夕晚霞，终究坠入深渊。&lt;br&gt;

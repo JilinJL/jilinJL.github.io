@@ -5,28 +5,28 @@
         <link>https://jilinJL.github.io</link>
         <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 16 Dec 2022 17:12:40 +0800</pubDate>
-        <lastBuildDate>Fri, 16 Dec 2022 17:12:40 +0800</lastBuildDate>
+        <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
+        <lastBuildDate>Fri, 12 May 2023 10:05:15 +0800</lastBuildDate>
         <category>hello hexo!</category>
+        <category>course</category>
         <category>html</category>
         <category>css</category>
-        <category>course</category>
+        <category>TS</category>
+        <category>JS</category>
         <category>java</category>
         <category>javaweb</category>
-        <category>life</category>
         <category>tips</category>
+        <category>life</category>
+        <category>work</category>
+        <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
-        <category>JS</category>
-        <category>TS</category>
-        <category>data-structure</category>
-        <category>work</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</guid>
             <title>OBS虚拟摄像头</title>
             <link>https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</link>
             <category>tips</category>
-            <pubDate>Fri, 16 Dec 2022 17:12:40 +0800</pubDate>
+            <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;一-下载安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-下载安装&#34;&gt;#&lt;/a&gt; 一、下载安装&lt;/h2&gt;
 &lt;p&gt;下载方式有两种：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;官网下载&lt;/strong&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9vYnNwcm9qZWN0LmNvbQ==&#34;&gt;https://obsproject.com&lt;/span&gt;&lt;/p&gt;
