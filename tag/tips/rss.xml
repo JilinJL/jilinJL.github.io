@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>寂林的小窝 • Posts by &#34;tips&#34; tag</title>
+        <title>寂林的小�?? • Posts by &#34;tips&#34; tag</title>
         <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
+        <description>飒飒西风满院�??,蕊寒香冷蝶难�??</description>
         <language>zh-CN</language>
         <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
         <lastBuildDate>Fri, 12 May 2023 10:05:15 +0800</lastBuildDate>
@@ -21,6 +21,7 @@
         <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
+        <category>master</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/something/OBS%E8%99%9A%E6%8B%9F%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8/</guid>
             <title>OBS虚拟摄像头</title>

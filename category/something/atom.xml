@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jilinJL.github.io</id>
-    <title>寂林的小窝 • Posts by &#34;something&#34; category</title>
+    <title>寂林的小�?? • Posts by &#34;something&#34; category</title>
     <link href="https://jilinJL.github.io" />
     <updated>2023-09-04T10:53:19.547Z</updated>
     <category term="hello hexo!" />
@@ -18,6 +18,7 @@
     <category term="data-structure" />
     <category term="es6" />
     <category term="js" />
+    <category term="master" />
     <entry>
         <id>https://jilinjl.github.io/something/jp/</id>
         <title>实习结束</title>

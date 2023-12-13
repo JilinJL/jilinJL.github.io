@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>寂林的小窝 • Posts by &#34;浅试一下es6+&#34; category</title>
+        <title>寂林的小�?? • Posts by &#34;浅试一下es6+&#34; category</title>
         <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
+        <description>飒飒西风满院�??,蕊寒香冷蝶难�??</description>
         <language>zh-CN</language>
         <pubDate>Fri, 12 May 2023 10:06:33 +0800</pubDate>
         <lastBuildDate>Fri, 12 May 2023 10:06:33 +0800</lastBuildDate>
@@ -21,6 +21,7 @@
         <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
+        <category>master</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/js/es6/ES6-%E5%85%9C%E5%85%9C%E8%BD%AC%E8%BD%AC%E8%BF%98%E6%98%AF%E4%BD%A0/</guid>
             <title>ES6</title>

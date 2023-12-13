@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>寂林的小窝 • Posts by &#34;课程&#34; category</title>
+        <title>寂林的小�?? • Posts by &#34;课程&#34; category</title>
         <link>https://jilinJL.github.io</link>
-        <description>飒飒西风满院栽,蕊寒香冷蝶难来</description>
+        <description>飒飒西风满院�??,蕊寒香冷蝶难�??</description>
         <language>zh-CN</language>
         <pubDate>Fri, 12 May 2023 10:05:15 +0800</pubDate>
         <lastBuildDate>Fri, 12 May 2023 10:05:15 +0800</lastBuildDate>
@@ -21,6 +21,7 @@
         <category>data-structure</category>
         <category>es6</category>
         <category>js</category>
+        <category>master</category>
         <item>
             <guid isPermalink="true">https://jilinjl.github.io/courses/%E8%BD%AF%E4%BB%B6%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2/</guid>
             <title>软件项目管理</title>
